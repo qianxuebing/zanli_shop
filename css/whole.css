@@ -1,0 +1,95 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a img{
+	border: 0;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	content: "";
+	clear: both;
+}
+.w{
+	width: 1190px;
+	margin: 0 auto;
+}
+
+
+.header{
+	margin-top: 10px;
+}
+.header a:hover{
+	color: red;
+}
+.headerLeft>p{
+	margin-right: 10px;
+	line-height: 14px;
+}
+.headerLeft>a{
+	display: inline-block;
+	width: 18px;
+	height: 16px;
+	margin-right: 5px;
+}
+.headerLeft>a.weibo{	
+	background: url(../img/whole.png) no-repeat 0 0;
+}
+.headerLeft>a.tengxun{
+	background: url(../img/whole.png) no-repeat -21px 0;
+}
+.headerLeft>a.weixin{
+	background: url(../img/whole.png) no-repeat -40px 0;
+	margin-right: 2px;
+}
+.headerLeft>span{
+	display: inline-block;
+	background: url(../img/whole.png) no-repeat -143px 0;
+	width: 6px;
+	height: 4px;
+    vertical-align: middle;
+}
+
+.headerRight>a{
+	display: inline-block;
+	margin-left: 10px;	
+
+}
+.headerRight>a:nth-of-type(2){
+	margin-left: 0;
+}
+.headerRight>a>span{
+	display: inline-block;
+	margin-right: 3px;
+	width: 14px;
+	height: 14px;		
+}
+
+.headerRight>a>span.myOrder{
+	background: url(../img/whole.png) no-repeat -64px 0;
+
+}
+.headerRight>a>span.collect{
+	background: url(../img/whole.png) no-repeat -85px 0;
+}
+.headerRight>a>span.online{
+	background: url(../img/whole.png) no-repeat -108px 0;
+}
+.headerRight>a>span.tel{
+	background: url(../img/whole.png) no-repeat -127px 0;
+}
+/*header end*/
