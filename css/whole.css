@@ -20,7 +20,8 @@ a img{
 .right{
 	float: right;
 }
-.clear{
+.clear:after{
+	display: block;
 	content: "";
 	clear: both;
 }
@@ -29,9 +30,10 @@ a img{
 	margin: 0 auto;
 }
 
-
+/*header start*/
 .header{
 	margin-top: 10px;
+	line-height: 14px;
 }
 .header a:hover{
 	color: red;
@@ -93,3 +95,11 @@ a img{
 	background: url(../img/whole.png) no-repeat -127px 0;
 }
 /*header end*/
+
+/*add start*/
+.add{
+	width: 100%;
+	height: 70px;
+	background-color: #df2b38;
+	margin-top: 10px;
+}
