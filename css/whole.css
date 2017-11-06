@@ -164,6 +164,13 @@ a img{
 	width: 117px;
 	border-right:1px solid #0052a5;
 }
+.top .shoppingCart>span.cart_word>span.cart{
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat -185px 0;
+	width: 25px;
+	height: 20px;
+	padding-right: 5px;
+}
 .top .shoppingCart>span.cart_num{
 	border-left:1px solid #4c9beb;
 	width: 60px;
