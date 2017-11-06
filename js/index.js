@@ -53,11 +53,15 @@ $(document).ready(function(){
 		if (d == 0) {			
 			new_ul.animate({left:-1*new_width*new_count+"px"},500,function(){
 				new_ul.css("left","0px");
-		});
+			});
 		} else{		
 			new_ul.animate({left:-1*new_width*d+"px"},500);
 		}	
 	},5000);
+	/***************new product end************************/
+	
+	
+	
 	
 	
 	
