@@ -386,6 +386,9 @@ a img{
 	line-height: 44px;
 	
 }
+.title1 .more{
+	margin-top: 10px;
+}
 .title1 .more>strong{
 	float: left;
 	display: inline-block;
@@ -394,14 +397,116 @@ a img{
 	height: 20px;
 	margin-right: 5px;
 }
+
 .title1 .more>a:hover{
 	color: #F15500;
 }
 
 .personalWelfare{
 	border:1px solid #ddd;
+	border-top: 2px solid #1D7AD9;
+	margin-top: 10px;
+	height: 485px;
 }
 .personalLeft{
+	width: 250px;
+	height: 485px;
+	position: relative;
+	overflow: hidden;
+}
+.personalLeft>ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.personalLeft>ul>li{
+	width: 250px;
+	height: 485px;
+}
+.personalLeft>ul>li>a>img{
+	width: 250px;
+	height: 485px;
+}
+.personalCenter{
+	width: 725px;
+}
+.personalCenter>dl{
+	width: 155px;
+	padding: 9px 12px;
 	
+}
+.personalCenter>dl>dt{
+	text-align: center;
+}
+
+.personalCenter>dl>dt>a>img{
+	width: 160px;
+	height: 160px;
+}
+.personalCenter>dl>dd>span{
+	color: #FF7700;
+}
+.personalRight{
+	width: 210px;
+	border-left:1px solid #ddd ;
+}
+.personalRight>h4{
+	font-size: 16px;
+	height: 25px;
+	line-height: 25px;
+	padding: 10px;
+	color: #333;
+}
+.personalRight>h4>span{
+	display: inline-block;
+	float: left;
+	background: url(../img/index_img/whole.png) no-repeat -50px -180px;
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+.personalRight>ul{
+	text-align: center;
+	padding: 5px 5px;
+	border-bottom:1px dashed #ddd;
+}
+.personalRight>ul>li>a{
+	font-size: 12px;
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	
+}
+.personalRight>ul>li>a>img{
+	width: 130px;
+	height: 130px;
+}
+.personalRight>dl{
+	padding: 5px 10px;
+	border-bottom:1px dashed #ddd ;
+	
+}
+.personalRight>dl>dt{
+	float: left;
+	margin-right: 8px;
+}
+.personalRight>dl>dt>a>img{
+	width: 52px;
+}
+.personalRight>dl>dd{
+	float: left;
+	line-height: 26px;
+	font-size: 12px;
+	color: #999;
+}
+.personalRight>dl>dd>a{
+	font-size: 12px;
+}
+.personalRight>dl>dd>span{
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat -218px 0;
+	width: 18px;
+	height: 16px;
+	margin-right: 5px;
 }
 /*个人福利   end*/
