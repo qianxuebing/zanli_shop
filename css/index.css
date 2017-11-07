@@ -365,3 +365,43 @@ a img{
 	color: #FF7700;
 }
 /*销量最多   end*/
+
+/*个人福利   start*/
+.title1{
+	margin-top: 15px;
+}
+
+.title1 .column>strong.personal{
+	float: left;
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat 0 -179px;
+	width: 42px;
+	height: 44px;
+	margin-right: 10px;
+}
+.title1 .column>span{
+	display: inline-block;
+	font-size: 18px;
+	float: left;
+	line-height: 44px;
+	
+}
+.title1 .more>strong{
+	float: left;
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat -185px -150px;
+	width: 15px;
+	height: 20px;
+	margin-right: 5px;
+}
+.title1 .more>a:hover{
+	color: #F15500;
+}
+
+.personalWelfare{
+	border:1px solid #ddd;
+}
+.personalLeft{
+	
+}
+/*个人福利   end*/
