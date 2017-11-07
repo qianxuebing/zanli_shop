@@ -569,3 +569,20 @@ a img{
 	margin-right: 10px;
 }
 /*家庭福利  end*/
+
+/*特价专卖  start*/
+.title1 .column1>strong.special{
+	float: left;
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat -176px -111px;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+}
+.title1 .column1>span{
+	display: inline-block;
+	font-size: 18px;
+	float: left;
+	line-height: 36px;
+	
+/*特价专卖  end*/
