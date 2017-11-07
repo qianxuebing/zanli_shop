@@ -210,7 +210,7 @@ a img{
 }
 /*banner end*/
 
-/*兑换专区*/
+/*兑换专区   start*/
 .title{
 	margin-top: 15px;
 }
@@ -277,7 +277,7 @@ a img{
 }
 .product .clickyou{
 	position: absolute;
-	top: 0;
+	top: 132px;
 	left: 0;
 	background: url(../img/index_img/whole.png) no-repeat 0 -111px;
 	width: 60px;
@@ -285,9 +285,41 @@ a img{
 }
 .product .clickzuo{
 	position: absolute;
-	top: 0;
-	left: 0;
+	top:132px;
+	right: 0;
 	background: url(../img/index_img/whole.png) no-repeat -65px -111px;
 	width: 60px;
 	height: 60px;
 }
+/*兑换专区   end*/
+
+/*进入频道   start*/
+.channel{
+	margin-top: 15px;
+}
+.channel>dl{
+	position: relative;
+}
+.channel>dl:first-of-type{
+	margin-right:  3px;
+}
+.channel>dl>dt{
+	width: 395px;
+	height: 195px;
+}
+.channel>dl>dt>a>img{
+	width: 395px;
+	height: 195px;
+}
+.channel>dl>dd{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px 15px;
+}
+.channel>dl>dd>a{
+	color: #fff;
+}
+
+/*进入频道   end*/
