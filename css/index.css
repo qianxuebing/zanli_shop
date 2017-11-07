@@ -584,5 +584,107 @@ a img{
 	font-size: 18px;
 	float: left;
 	line-height: 36px;
+}
+.specialcon{
+	margin-top: 10px;
+	border-bottom:1px solid #ddd;
+	border-top: 2px solid #aa73d1;
+}	
+.specialcon_left .leftconL{
+	padding:10px 18px 32px 0;
+	width: 238px;
+}
+.specialcon_left .leftconL>dl>dt>a>img{
+	width: 250px;
+}
+
+.specialcon_left .leftconL>dl>dd>a{
+	display: inline-block;
+	color: #666;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+}
+.specialcon_left .leftconL>dl>dd.zheqian{
+	color: #999;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+}
+.specialcon_left .leftconL>dl>dd.zheqian>i{
+	font-style: normal;
+	font-size: 12px;
+	text-decoration: line-through;
+}
+.specialcon_left .leftconL>dl>dd.zhehou>b{
+	color: #666;
+	font-size: 12px;
+	float: left;
+	font-weight: normal;
+}
+.specialcon_left .leftconL>dl>dd.zhehou>i{
+	display: inline-block;
+	font-size: 12px;
+	font-style: normal;
+	float: left;
+	color: #FF7700;
+}
+.specialcon_left .leftconL>dl>dd.zhehou>span{
+	float: left;
+	display: inline-block;
+	width: 30px;
+	height: 16px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #FF7700;
+	margin-left: 10px;
+	padding: 0 10px;
+	color: #fff;
+}
+.specialcon_left .leftconL>dl>dd.ico>i{
+	float: left;
+	display: inline-block;
+	font-size: 12px;
+	background: url(../img/index_img/whole.png) no-repeat -254px 0;
+	width: 14px;
+	height: 11px;
+	background-color: #FF7700;
+	margin-right: 5px;
+}
+.specialcon_left .leftconL>dl>dd.ico>span{
+	float: left;
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 10px;	
+}
+.specialcon_left .leftconL>dl>dd.ico>b{
+	font-weight: none;
+	display: inline-block;
+	background-color: #FF7700;
+	color: #fff;
 	
+}
+.specialcon_left .leftconR{
+	width: 357px;
+/*	border:1px solid red;*/
+}
+.specialcon_left .leftconR>dl{
+	width: 147px;
+	border:1px solid #ddd;
+	padding: 0 10px;
+}
+.specialcon_left .leftconR>dl>dt{
+	text-align: center;
+	padding-top: 17px;
+}
+.specialcon_left .leftconR>dl>dt>a>img{
+	width: 125px;
+}
+.specialcon_left .leftconR>dl>dd{
+
+	font-size: 12px;
+}
+.specialcon_left .leftconR>dl>dd>span{
+	color: #FF7700;
+}
 /*特价专卖  end*/
