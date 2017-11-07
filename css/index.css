@@ -258,10 +258,9 @@ a img{
 	height: 193px;
 }
 .product .productcon>dl>dd{
-		margin-top: 5px;
+	margin-top: 5px;
 }
 .product .productcon>dl>dd>a{
-	display: inline-block;
 	font-size: 12px;
 }
 .product .productcon>dl>dd>i{
@@ -321,5 +320,48 @@ a img{
 .channel>dl>dd>a{
 	color: #fff;
 }
-
 /*进入频道   end*/
+
+/*销量最多   start*/
+.mostspan{
+	margin-top: 10px;
+}
+.mostspan>span{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 50px;
+	width: 100px;
+	text-align: center;
+}
+.mostspan>span.current{
+	color: #c10000;
+	border-bottom:2px solid #c10000;
+}
+.mostproduct{
+	border:1px solid #ddd;
+}
+.mostproduct>dl{
+	width: 170px;
+	padding: 13px;
+	border:1px solid #ddd;
+}
+.mostproduct>dl>dt{
+	text-align: center;
+	margin-top: 18px;
+}
+.mostproduct>dl>dt>a>img{
+		
+	width: 150px;
+	height: 150px;
+}
+.mostproduct>dl>dd{
+	height: 26px;
+	line-height: 26px;
+}
+.mostproduct>dl>dd>a{
+	font-size: 12px;
+}
+.mostproduct>dl>dd>span{
+	color: #FF7700;
+}
+/*销量最多   end*/
