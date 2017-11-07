@@ -57,7 +57,7 @@ $(document).ready(function(){
 		} else{		
 			new_ul.animate({left:-1*new_width*d+"px"},500);
 		}	
-	},5000);
+	},2000);
 	/***************new product end************************/
 	
 	

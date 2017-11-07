@@ -198,8 +198,8 @@ a img{
 }
 .product_img>div.items>span{
 	display: inline-block;
-	height: 15px;
-	width: 15px;
+	height: 13px;
+	width: 13px;
 	background-color: #FF7700;
 	border-radius: 50%;
 	float: left;
@@ -209,3 +209,85 @@ a img{
 	background-color: #fff;
 }
 /*banner end*/
+
+/*兑换专区*/
+.title{
+	margin-top: 15px;
+}
+
+.title .column>strong.duihuan{
+	float: left;
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat -135px -111px;
+	width: 28px;
+	height: 31px;
+	margin-right: 10px;
+}
+.title .column>span{
+	display: inline-block;
+	font-size: 18px;
+	float: left;
+	line-height: 31px;
+	
+}
+.title .more>strong{
+	float: left;
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat -185px -150px;
+	width: 15px;
+	height: 20px;
+	margin-right: 5px;
+}
+.title .more>a:hover{
+	color: #F15500;
+}
+.product{
+	margin-top: 15px;
+	border: 1px solid #ddd;
+	border-top: 2px solid #9bb526;
+	position: relative;
+}
+
+.product .productcon>dl{
+	float: left;
+	width: 193px;
+	margin: 22px 20px 18px 22px;
+}
+.product .productcon>dl>dt>a>img{
+	width: 193px;
+	height: 193px;
+}
+.product .productcon>dl>dd{
+		margin-top: 5px;
+}
+.product .productcon>dl>dd>a{
+	display: inline-block;
+	font-size: 12px;
+}
+.product .productcon>dl>dd>i{
+	color: #FF7700;
+	font-style: normal;
+}
+.product .productcon>dl>dd>span>strong{
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat -218px 0;
+	width: 18px;
+	height: 16px;
+	margin-right: 5px;
+}
+.product .clickyou{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../img/index_img/whole.png) no-repeat 0 -111px;
+	width: 60px;
+	height: 60px;
+}
+.product .clickzuo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../img/index_img/whole.png) no-repeat -65px -111px;
+	width: 60px;
+	height: 60px;
+}
