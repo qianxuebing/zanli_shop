@@ -427,6 +427,22 @@ a img{
 	width: 250px;
 	height: 485px;
 }
+.personalLeft .items{
+	position: absolute;
+	bottom: 27px;
+	left: 70px;
+}
+.personalLeft .items>span{
+	display: inline-block;
+	width: 30px;
+	height: 5px;
+	background-color: #000;
+	float: left;
+	margin-right: 10px;
+}
+.personalLeft .items>span.current{
+	background-color: #FF7700;
+}
 .personalCenter{
 	width: 725px;
 }
@@ -510,3 +526,46 @@ a img{
 	margin-right: 5px;
 }
 /*个人福利   end*/
+/*公司福利  start*/
+.title1 .column>strong.company{
+	float: left;
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat -83px -179px;
+	width: 42px;
+	height: 44px;
+	margin-right: 10px;
+}
+.companyWelfare{
+	border-top: 2px solid #ff7700 ;
+}
+.companyRight>h4>span{
+	display: inline-block;
+	float: left;
+	background: url(../img/index_img/whole.png) no-repeat -132px -180px;
+	width: 27px;
+	height: 25px;
+	margin-right: 10px;
+}
+/*公司福利  end*/
+
+/*家庭福利  start*/
+.title1 .column>strong.home{
+	float: left;
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat -165px -179px;
+	width: 42px;
+	height: 44px;
+	margin-right: 10px;
+}
+.homeWelfare{
+	border-top: 2px solid #f5619c ;
+}
+.homeRight>h4>span{
+	display: inline-block;
+	float: left;
+	background: url(../img/index_img/whole.png) no-repeat -213px -180px;
+	width: 27px;
+	height: 25px;
+	margin-right: 10px;
+}
+/*家庭福利  end*/
