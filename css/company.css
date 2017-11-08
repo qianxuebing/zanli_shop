@@ -253,3 +253,80 @@ a img{
 	cursor: pointer;
 }
 /*快点抢    end*/
+
+/*办公用品    start  */
+.work{
+	margin-top: 20px;
+	height: 440px;
+}
+.work .work_list{
+	width: 172px;
+	background-color: #1D7AD9;
+	height: 440px;
+	margin-right: 1px;
+}
+.work .work_img{
+	width: 440px;
+	height: 440px;
+	position: relative;
+}
+.work .work_img>ul>li{
+	position: absolute;
+}
+.work .work_product{
+	width: 558px;
+	height: 440px;
+}
+.work .work_product>dl{
+/*	width: 178px;*/
+	border: 1px solid #ddd;
+	padding: 10px 14px;
+}
+.work .work_product>dl>dt{
+	text-align: center;
+}
+.work .work_product>dl>dt>a>img{
+	width: 155px;
+}
+.work .work_product>dl>dd{
+	line-height: 20px;
+}
+.work .work_product>dl>dd>a{
+	font-size: 12px;
+	color: #666;
+}
+.work .work_product>dl>dd>span{
+	color: #FF7700;
+	font-size: 12px;
+}
+
+.two{
+	margin-top: 20px;
+}
+.two>dl{
+	width: 166px;
+	margin-right: 36px;
+	
+}
+.two>dl:last-of-type{
+	margin-right: 0;
+}
+.two>dl>dt>a>img{
+	width: 166px;
+}
+.two>dl>dt>dd{
+	line-height: 30px;
+}
+.two>dl>dd>a{
+	font-size: 12px;
+	color: #666;
+	line-height: 30px;	
+}
+.two>dl>dd>span{
+	font-size: 12px;
+	color: #FF7700;
+}
+/*办公用品    end  */
+.last{
+	margin-bottom: 30px;
+}
