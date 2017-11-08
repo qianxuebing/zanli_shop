@@ -641,6 +641,7 @@ a img{
 	padding: 0 10px;
 	color: #fff;
 }
+
 .specialcon_left .leftconL>dl>dd.ico>b>i{
 	display: inline-block;
 	font-size: 12px;
@@ -666,19 +667,19 @@ a img{
 	padding: 0 5px;
 	
 }
+/*.specialcon_left .leftconL>dl>dd.ico>span{
+	display: inline-block;
+}*/
 .specialcon_left .leftconL>dl>dd.ico>span>i{
 	display: inline-block;
 	font-size: 12px;
-	background: url(../img/index_img/whole.png) no-repeat -254px 0;
-	width: 14px;
-	height: 11px;
-	background-color: #FF7700;
+	background: url(../img/index_img/whole.png) no-repeat -218px 0;
+	width: 18px;
+	height: 16px;
 	margin-right: 5px;
-	margin-top: 5px;
 }
 .specialcon_left .leftconR{
 	width: 357px;
-/*	border:1px solid red;*/
 }
 .specialcon_left .leftconR>dl{
 	width: 147px;
