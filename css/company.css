@@ -74,3 +74,94 @@ a img{
 	top: 10px;		
 }
 /*nav end*/
+
+/*公司福利banner start*/
+.comban{
+	margin-top: 10px;
+	background-color: #f5ecdb;
+	height: 420px;
+}
+.comban .w{
+	position: relative;
+}
+.comban .w .comimg{
+	height: 420px;
+	position: relative;
+}
+.comban .w .comimg>ul>li{
+	position: absolute;
+	top: 0;
+	height: 0;
+}
+.comban .w .comimg>ul>li>a>img{
+	width: 1190px;
+	height: 420px;
+}
+.comban .w .comimg .points{
+	position: absolute;
+	bottom: 14px;
+	left: 50%;
+	margin-left: -51px;
+}
+.comban .w .comimg .points>span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin-right: 14px;
+}
+.comban .w .comimg .points>span.current{
+	background-color: #FF7700 ;
+}
+.comleft{
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 185px;
+	height: 380px;
+	background-color: #1D7AD9;
+	color: #fff;
+	padding: 20px 15px;
+}
+.comleft .comleft_con{
+	padding: 5px 0;
+	border-bottom: 1px solid #086bd0;
+}
+.comleft .comleft_con>h4{
+	font-size:16px ;
+	height: 35px;
+	line-height: 35px;
+}
+
+.comleft .comleft_con .comlist>a{
+	display: inline-block;
+	color: #fff;
+	margin: 5px;
+	font-size: 12px;
+}
+.comleft .comleft_con .comlist>a:hover{
+	color: yellow;
+}
+.comright{
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+.comright>dl{
+	background-color: #fff;
+	padding: 10px 10px;
+	margin-top: 5px;
+	
+}
+.comright>dl>dt{
+	text-align: center;
+}
+.comright>dl>dt>a>img{
+	width: 160px;
+}
+.comright>dl>dd>a{
+	color: #666;
+	font-size: 12px;
+}
+/*公司福利banner end*/
