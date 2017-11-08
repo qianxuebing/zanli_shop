@@ -590,14 +590,20 @@ a img{
 	border-bottom:1px solid #ddd;
 	border-top: 2px solid #aa73d1;
 }	
+
 .specialcon_left .leftconL{
-	padding:10px 18px 32px 0;
-	width: 221px;
+	padding:10px 10px 32px 0;
+	width: 220px;
+}
+.specialcon_left .leftconL>dl>dt{
+	margin-top: 10px;
 }
 .specialcon_left .leftconL>dl>dt>a>img{
-	width: 233px;
+	width: 220px;
 }
-
+.specialcon_left .leftconL>dl>dd{
+	line-height: 25px;
+}
 .specialcon_left .leftconL>dl>dd>a{
 	display: inline-block;
 	color: #666;
@@ -667,9 +673,7 @@ a img{
 	padding: 0 5px;
 	
 }
-/*.specialcon_left .leftconL>dl>dd.ico>span{
-	display: inline-block;
-}*/
+
 .specialcon_left .leftconL>dl>dd.ico>span>i{
 	display: inline-block;
 	font-size: 12px;
@@ -679,7 +683,7 @@ a img{
 	margin-right: 5px;
 }
 .specialcon_left .leftconR{
-	width: 357px;
+	width: 340px;
 }
 .specialcon_left .leftconR>dl{
 	width: 147px;
@@ -700,6 +704,10 @@ a img{
 .specialcon_left .leftconR>dl>dd>span{
 	color: #FF7700;
 }
+.specialcon_left .leftconR>dl.no{
+	border-right: none !important;
+}
+
 /*特价专卖  end*/
 
 /*底部广告条  start*/
