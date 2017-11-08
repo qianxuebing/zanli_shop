@@ -641,8 +641,7 @@ a img{
 	padding: 0 10px;
 	color: #fff;
 }
-.specialcon_left .leftconL>dl>dd.ico>i{
-	float: left;
+.specialcon_left .leftconL>dl>dd.ico>b>i{
 	display: inline-block;
 	font-size: 12px;
 	background: url(../img/index_img/whole.png) no-repeat -254px 0;
@@ -650,19 +649,32 @@ a img{
 	height: 11px;
 	background-color: #FF7700;
 	margin-right: 5px;
+	margin-top: 5px;
 }
 .specialcon_left .leftconL>dl>dd.ico>span{
 	float: left;
 	display: inline-block;
 	font-size: 12px;
-	margin-left: 10px;	
+	margin-left: 10px;
+	color: #999;	
 }
 .specialcon_left .leftconL>dl>dd.ico>b{
 	font-weight: none;
 	display: inline-block;
 	background-color: #FF7700;
 	color: #fff;
+	padding: 0 5px;
 	
+}
+.specialcon_left .leftconL>dl>dd.ico>span>i{
+	display: inline-block;
+	font-size: 12px;
+	background: url(../img/index_img/whole.png) no-repeat -254px 0;
+	width: 14px;
+	height: 11px;
+	background-color: #FF7700;
+	margin-right: 5px;
+	margin-top: 5px;
 }
 .specialcon_left .leftconR{
 	width: 357px;
@@ -695,64 +707,3 @@ a img{
 }
 /*底部广告条  end*/
 
-/*footer start*/
-.footertop{
-	background-color: #f5f5f5;
-}
-.footertop .w{
-	padding: 33px 0;
-}
-.footertop .w>dl{
-	margin-left: 90px;
-}
-.footertop .w>dl>dt{
-	font-size: 16px;
-	color: #333;
-	line-height: 60px;
-}
-.footertop .w>dl>dt>span{
-	float: left;
-	display: inline-block;	
-	width: 49px;
-	height: 41px;
-	margin-right: 10px;	
-}
-.footertop .w>dl>dt.one>span{
-	background: url(../img/index_img/whole.png) no-repeat 0 -28px;
-}
-.footertop .w>dl>dt.two>span{
-	background: url(../img/index_img/whole.png) no-repeat -62px -28px;
-}
-.footertop .w>dl>dt.three>span{
-	background: url(../img/index_img/whole.png) no-repeat -120px -28px;
-}
-.footertop .w>dl>dt.four>span{
-	background: url(../img/index_img/whole.png) no-repeat -177px -28px;
-}
-.footertop .w>dl>dt.five>span{
-	background: url(../img/index_img/whole.png) no-repeat -233px -28px;
-}
-.footertop .w>dl>dd{
-	height: 30px;
-	line-height: 30px;
-	padding-left: 59px;
-}
-.footertop .w>dl>dd>a:hover{
-	color: #FF7700;
-}
-.footerbottom{
-	padding: 15px 0;	
-}
-.footerbottom>p{
-	text-align: center;
-	color: #666;
-	line-height: 30px;
-
-}
-.footerbottom>p>a{
-	color: #666;
-}
-.footerbottom>p>a:hover{
-	color: #FF7700;
-}
-/*footer end*/
