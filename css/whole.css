@@ -114,6 +114,7 @@ a img{
 	height: 80px;
 }
 .top .search{
+	margin-top: 10px;
 	margin-left: 158px;
 }
 .top .search .search_form input[type="text"]{
@@ -149,6 +150,7 @@ a img{
 	background-color: #1d7ad9;
 	height: 42px;
 	line-height: 42px;
+	margin-top: 10px;
 }
 .top .shoppingCart>span{
 	display: inline-block;	
