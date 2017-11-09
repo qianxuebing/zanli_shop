@@ -1,4 +1,14 @@
 $(document).ready(function(){
+	// subnav
+	$(".sidebar ul li").hover(function(){
+				var index = $(this).index();
+				$(".sidebar .subnav .item").removeClass("active").eq(index).addClass("active");
+			
+			});
+	
+	
+	
+	
 	/***************banner carousel(轮播) start************/
 	var ul = $(".banner_img ul");
 	var count = $(".banner_img ul").children().length;
