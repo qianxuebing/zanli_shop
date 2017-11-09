@@ -249,3 +249,49 @@ a img{
 	color: #FF7700;
 }
 /*footer end*/
+
+/*返回顶部*/
+ul.goback{
+	position: fixed;
+	right: 20px;
+	bottom: 50px;
+}
+ul.goback>li{
+	width: 45px;
+	height: 45px;
+	border: #ddd solid 1px;
+	margin-top: 5px;
+	background-color: #fff;
+}
+ul.goback>li>a>strong{
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat 0 -75px;
+	width: 24px;
+	height: 24px;
+	font-size: 12px;
+	margin: 12px 0 0 12px;
+}
+ul.goback>li.gocar>a>strong{
+	background: url(../img/index_img/whole.png) no-repeat -32px -75px;	
+}
+ul.goback>li.help>a>strong{
+	background: url(../img/index_img/whole.png) no-repeat -69px -75px;	
+}
+ul.goback>li.contact>a>strong{
+	background: url(../img/index_img/whole.png) no-repeat -105px -75px;	
+}
+ul.goback>li>a>span{
+	display: inline-block;
+	font-size: 12px;
+	color: #FF7700;
+	line-height: 16px;
+	padding: 8px 7px;
+	text-align: center;
+	display: none;
+}
+ul.goback>li:hover>a>strong{
+	display: none;
+}
+ul.goback>li:hover>a>span{
+	display: block;
+}
