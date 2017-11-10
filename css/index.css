@@ -82,12 +82,19 @@ a img{
 	position: relative;
 }
 .sidebar .sidebar_con{
-	padding: 10px 15px;
+	
 	border-bottom:1px solid #ddd;
 }
 .sidebar .sidebar_con>li{
+	padding: 10px 15px;
 	line-height: 16px;
 	border-bottom: 1px solid #ddd;
+}
+.sidebar .sidebar_con>li:hover{
+	background-color: #1D7AD9;
+}
+.sidebar .sidebar_con>li:hover>a{
+	color: #fff;
 }
 .sidebar .sidebar_con>li>a{
 	display: inline-block;
@@ -103,6 +110,9 @@ a img{
 	width: 6px;
 	height: 8px;	
 }
+.sidebar .sidebar_con>li:hover>a>span{
+	background: url(../img/index_img/whole.png) no-repeat -288px 0;
+}
 
 .sidebar_con .sidebar_list>a{
 	display: inline-block;
@@ -112,8 +122,8 @@ a img{
 	margin-right: 5px;
 	line-height: 25px;
 }
-.sidebar_con .sidebar_list>a:hover{
-	color: #ff7800;
+.sidebar .sidebar_con>li:hover .sidebar_list>a{
+	color: #fff;
 }
 .sidebar .subnav{
 	position: absolute;
@@ -618,7 +628,7 @@ a img{
 }	
 
 .specialcon_left .leftconL{
-	padding:10px 10px 32px 0;
+	padding:10px 10px 10px 0;
 	width: 220px;
 }
 .specialcon_left .leftconL>dl>dt{
@@ -628,7 +638,8 @@ a img{
 	width: 220px;
 }
 .specialcon_left .leftconL>dl>dd{
-	line-height: 25px;
+	line-height: 20px;
+	padding: 5px 0;
 }
 .specialcon_left .leftconL>dl>dd>a{
 	display: inline-block;

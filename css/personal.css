@@ -131,6 +131,9 @@ a img{
 	line-height: 28px;
 	cursor: pointer;
 }
+.pictureLeft .one>ul>li:hover>p{
+	color: #FF7700;
+}
 .pictureLeft .one>ul>li>span{
 	display: inline-block;
 	position: absolute;
@@ -190,6 +193,9 @@ a img{
 	line-height: 27px;
 	padding: 0 30px;
 	font-size: 12px;	
+}
+.three>ul>li:hover>p{
+	color: #FF7700;
 }
 .three>ul>li.current>p{
 	color: #fff;
@@ -267,6 +273,9 @@ a img{
 	line-height: 27px;	
 	font-size: 12px;
 }
+.hotWelfare>ul>li>p:hover{
+	color: #FF7700;
+}
 /*最火福利   end*/
 
 /*福利推荐   start*/
@@ -283,6 +292,7 @@ a img{
 }
 .recommend>dl>dt{
 	float: left;
+	margin-right: 5px;
 }
 
 .recommend>dl>dt>a>img{
@@ -296,6 +306,9 @@ a img{
 .recommend>dl>dd>a{
 	font-size: 12px;
 	color: #666;
+}
+.recommend>dl>dd>a:hover{
+	color: #ff7700;
 }
 .recommend>dl>dd:last-child{
 	line-height: 11px;

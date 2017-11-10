@@ -1,0 +1,155 @@
+@charset "utf-8";
+body{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+a img{
+	border: 0;
+}
+
+ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.w{
+	width: 1190px;
+	margin: 0 auto;
+}
+
+/*nav start*/
+.nav{
+	margin-top: 10px;
+	height: 44px;
+	background-color: #ff7700;	
+}
+.nav>ul{
+	position: relative;
+}
+.nav>ul>li{
+	float: left;
+
+}
+.nav>ul>li:hover{
+	background-color: #f15500;
+}
+.nav>ul>li>a{
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+	line-height: 44px;
+	padding: 0 35px;
+	font-weight: bold;
+	text-align: center;
+}
+.nav>ul>li:first-of-type{
+	background-color: #1d7ad9;
+	width: 200px;
+}
+.nav>ul>li:nth-of-type(7){
+	background-color: #f15500;
+}
+.nav>ul>li:last-of-type{
+	background: url(../img/index_img/whole.png) no-repeat -154px 0;
+	width: 25px;
+	height: 14px;
+	padding: 0;
+	position: absolute;
+	right: 225px;
+	top: 10px;		
+}
+/*nav end*/
+
+/*banner start*/
+.banner{
+	margin-top: 10px;
+	background-color: #f5ecdb;
+	height: 420px;
+	overflow: hidden;
+}
+.banner .banner_img{
+	width: 1190px;
+	height: 420px;
+	position: relative;
+	overflow: hidden;
+}
+.banner .banner_img>ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.banner .banner_img>ul>li{
+	width: 1190px;
+	height: 420px;
+	float: left;
+}
+.banner .banner_img>ul>li>a>img{
+	width: 1190px;
+	height:420px
+}
+.banner_img .points{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: -51px;
+}
+.banner_img .points>span{
+	display: inline-block;
+	width: 290px;
+	height: 35px;
+	background-color: rgba(0,0,0,0.5);
+	margin-right: 2px;
+	text-align: center;
+	line-height: 35px;	
+}
+.banner_img .points{
+	margin-left: 157px;
+}
+.banner_img .points>span>a{
+	color: #fff;
+}
+.banner_img .points>span.current{
+	background-color: rgba(0,230,255,0.5) ;
+}
+
+
+.main{
+	margin-top: 10px;
+	background:url(../img/bg_03.jpg) repeat top left;
+}
+.quan>ul{
+	padding: 20px 0px;
+}
+.quan>ul>li{
+	float: left;
+	margin-right: 20px;
+}
+.quan>ul>li:last-of-type{
+	margin-right: 0;
+}
+/*优惠券 end*/
+
+.title{
+	background: url(../img/ico/title1.png) no-repeat center;
+	width: 1190px;
+	height: 101px;
+}

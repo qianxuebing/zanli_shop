@@ -497,7 +497,14 @@
 			var items = points.children();
 			items.eq(0).addClass("current");
 			
-			setInterval(function(){
+			 var t = setInterval(run,2000);
+			 
+			 $(".comimg").hover(function(){
+			 	clearInterval(t);
+			 },function(){
+			 	t = setInterval(run,2000);
+			 });			 
+			function run(){
 				index = (index+1)%count;
 				items.removeClass("current").eq(index).addClass("current");
 				if (index == 0) {
@@ -507,7 +514,7 @@
 				} else{
 					ul.animate({left:-1*width*index+"px"},500);
 				}					
-			},2000);
+			}
 		</script>
 	</body>
 
