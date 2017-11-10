@@ -6,9 +6,7 @@ $(document).ready(function(){
 			
 			});
 	
-	
-	
-	
+
 	/***************banner carousel(轮播) start************/
 	var ul = $(".banner_img ul");
 	var count = $(".banner_img ul").children().length;
@@ -22,7 +20,15 @@ $(document).ready(function(){
 	
 	items.eq(0).addClass("current");
 	
-	setInterval(function(){
+	var t = setInterval(run,2000);
+	
+	$(".banner_img").hover(function(){
+		clearInterval(t);
+	},function(){
+		t = setInterval(run,2000);
+	});
+
+	function run(){
 		index = (index+1)%count;
 		items.removeClass("current").eq(index).addClass("current");
 		if (index == 0) {			
@@ -32,7 +38,7 @@ $(document).ready(function(){
 		} else{		
 			ul.animate({left:-1*width*index+"px"},500);
 		}		
-	},2000);
+	}
 	/*************banner end*****************/
 	
 	/***************new product start************************/	
