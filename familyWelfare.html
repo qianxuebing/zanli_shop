@@ -54,7 +54,7 @@
 						<a href="#">家庭福利</a>
 					</li>
 					<li>
-						<a href="#">公司福利</a>
+						<a href="companyWelfare.html" target="_blank">公司福利</a>
 					</li>
 					<li>
 						<a href="#">兑换专区</a>
@@ -488,16 +488,8 @@
 					<dd><span>￥129. 00</span></dd>
 				</dl>
 			</div>
-			
-			
-			
-			
-			
-			
-			
 		</div>
 		
-
 		<div id="footer"></div>
 
 		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
@@ -514,8 +506,16 @@
 			
 			var first = ul.children().first().clone(true);
 			ul.append(first);
+						
+			var t = setInterval(run,3000);
 			
-			setInterval(function(){
+			$(".banner").hover(function(){
+				clearInterval(t);
+			},function(){
+				 t = setInterval(run,3000);
+			});
+			
+			function run(){
 				index = (index + 1)%count;
 				if (index == 0) {
 					ul.animate({left:-1*width*count+"px"},1000,function(){
@@ -525,9 +525,7 @@
 				} else{
 					ul.animate({left:-1*width*index+"px"},1000);
 				}			
-			},3000);
-			
-			
+			}	
 		</script>
 
 	</body>
