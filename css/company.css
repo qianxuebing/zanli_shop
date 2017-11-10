@@ -85,13 +85,20 @@ a img{
 	position: relative;
 }
 .comban .w .comimg{
+	width:1190px;
 	height: 420px;
 	position: relative;
+	overflow: hidden;	
 }
-.comban .w .comimg>ul>li{
+.comban .w .comimg>ul{
 	position: absolute;
 	top: 0;
-	height: 0;
+	left: 0;	
+}
+.comban .w .comimg>ul>li{
+	width: 1190px;
+	height: 420px;
+	float: left;
 }
 .comban .w .comimg>ul>li>a>img{
 	width: 1190px;

@@ -73,22 +73,18 @@
 		<div class="comban">
 			<div class="w">
 				<div class="comimg">
-					<ul>
+					<ul class="clear">
 						<li>
-							<a href="#"><img src="img/company_img/company3.jpg" /></a>
+							<a href="#"><img src="img/company_img/company1.jpg" /></a>
 						</li>
 						<li>
 							<a href="#"><img src="img/company_img/company2.jpg" /></a>
 						</li>
 						<li>
-							<a href="#"><img src="img/company_img/company1.jpg" /></a>
+							<a href="#"><img src="img/company_img/company3.jpg" /></a>
 						</li>
 					</ul>
-					<div class="points">
-						<span></span>
-						<span class="current"></span>
-						<span></span>
-					</div>
+					<div class="points"></div>
 				</div>
 				<div class="comleft">
 					<div class="comleft_con">
@@ -492,6 +488,35 @@
 		<script type="text/javascript">
 			$("#header").load("header.html");
 			$("#footer").load("footer.html");
+			
+			var ul = $(".comimg ul");
+			var count = $(".comimg ul li").length;
+			var width = $(".comimg").width();
+			var index = 0;
+			var points = $(".points");						
+			ul.width(width*(count+1));
+			
+			var first = ul.children().first().clone(true);
+			console.log(first);
+			ul.append(first);
+			
+			for (var i = 0 ; i < count; i++) {
+				points.append("<span></span>");
+			}			
+			var items = points.children();
+			items.eq(0).addClass("current");
+			
+			setInterval(function(){
+				index = (index+1)%count;
+				items.removeClass("current").eq(index).addClass("current");
+				if (index == 0) {
+					ul.animate({left:-1*width*count+"px"},500,function(){
+						ul.css("left","0px");
+					});
+				} else{
+					ul.animate({left:-1*width*index+"px"},500);
+				}					
+			},2000);
 		</script>
 	</body>
 
