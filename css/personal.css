@@ -73,15 +73,55 @@ a img{
 
 /*banner start*/
 .banner{
-	width: 100%;
-	height: 420px;
 	margin-top: 10px;
-}
-.banner>ul>li>a>img{	
-	width: 100%;
+	background-color: #f5ecdb;
 	height: 420px;
+	overflow: hidden;
 }
-/*banner end*/
+.banner .banner_img{
+	width: 1190px;
+	height: 420px;
+	position: relative;
+	overflow: hidden;
+}
+.banner .banner_img>ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.banner .banner_img>ul>li{
+	width: 1190px;
+	height: 420px;
+	float: left;
+}
+.banner .banner_img>ul>li>a>img{
+	width: 1190px;
+	height:420px
+}
+.banner_img .points{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: -51px;
+}
+.banner_img .points>span{
+	display: inline-block;
+	width: 290px;
+	height: 35px;
+	background-color: rgba(0,0,0,0.5);
+	margin-right: 2px;
+	text-align: center;
+	line-height: 35px;	
+}
+.banner_img .points{
+	margin-left: 157px;
+}
+.banner_img .points>span>a{
+	color: #fff;
+}
+.banner_img .points>span.current{
+	background-color: rgba(0,230,255,0.5) ;
+}
 
 /*今日上新  start*/
 
@@ -143,7 +183,6 @@ a img{
 	height: 55px;
 	line-height: 55px;
 	padding: 0 18px;
-	cursor: pointer;
 }
 .pictureLeft .one>ul>li>span>b{
 	display: inline-block;

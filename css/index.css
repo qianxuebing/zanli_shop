@@ -128,7 +128,8 @@ a img{
 	position: absolute;
 	top: 0;
 	left: 198px;
-	width: 600px;
+	width: 990px;
+	
 	z-index: 9999;
 	
 	background-color: #fff;
@@ -138,15 +139,18 @@ a img{
 	width: inherit;
 	display: none;
 	border: #1D7AD9 solid 1px;
+	height: 360px;
 }
 .subnav .item.active{
 	display: block;
 }
 .sidebar .subnav>dl>dt{
 	float: left;
+	width: 100px;
 }
 .sidebar .subnav>dl>dd{
 	float: left;
+	width: 100px;
 }
 .banner .banner_img{
 	width: 755px;
@@ -155,15 +159,13 @@ a img{
 	position: relative;
 	overflow: hidden;
 }
-.banner_img>ul{
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+
 .banner_img>ul>li{
 	width: 755px;
 	height: 353px;
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .banner_img>ul>li>img{
 	width: inherit;

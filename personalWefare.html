@@ -63,7 +63,7 @@
 						<a href="#">兑换专区</a>
 					</li>
 					<li>
-						<a href="#">特价专卖</a>
+						<a href="specialPrice.html" target="_blank">特价专卖</a>
 					</li>
 					<li></li>
 				</ul>
@@ -73,11 +73,28 @@
 		
 		<!--banner  start-->
 		<div class="banner">
-			<ul>
-				<li><a href="#"><img src="img/personal_img/jieshao_02.jpg"/></a></li>				
-			</ul>			
+			<div class="w">
+				<div class="banner_img">
+					<ul class="clear">
+						<li>
+							<a href="#"><img src="img/company_img/company1.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/company_img/company2.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/company_img/company3.jpg" /></a>
+						</li>
+					</ul>
+					<div class="points">
+						<span><a href="#">爱心套头毛衣</a></span>
+						<span><a href="#">爱心套头毛衣</a></span>
+						<span><a href="#">爱心套头毛衣</a></span>
+					</div>
+				</div>
+			</div>
 		</div>
-		<!--banner  end-->
+		<!--banner end-->
 		
 		<div class="w clear">
 			<h4 class="clear"><span></span>今日上新</h4>
@@ -334,6 +351,39 @@
 		<script type="text/javascript">
 			$("#header").load("header.html");
 			$("#footer").load("footer.html");
+			
+			var ul = $(".banner_img ul");
+			var count = $(".banner_img ul li").length;
+			var width = $(".banner_img").width();
+			var index = 0;
+			var points = $(".points");
+			ul.width(width * (count + 1));
+
+			var first = ul.children().first().clone(true);
+			ul.append(first);
+			
+			var items = points.children();
+			items.eq(0).addClass("current");
+
+			var t = setInterval(run, 2000);
+
+			$(".banner_img").hover(function() {
+				clearInterval(t);
+			}, function() {
+				t = setInterval(run, 2000);
+			});
+
+			function run() {
+				index = (index + 1) % count;
+				items.removeClass("current").eq(index).addClass("current");
+				if(index == 0) {
+					ul.animate({ left: -1 * width * count + "px" }, 500, function() {
+						ul.css("left", "0px");
+					});
+				} else {
+					ul.animate({ left: -1 * width * index + "px" }, 500);
+				}
+			}
 		</script>
 
 	</body>

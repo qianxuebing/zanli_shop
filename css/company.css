@@ -265,6 +265,7 @@ a img{
 .work{
 	margin-top: 20px;
 	height: 440px;
+	overflow: hidden;
 }
 .work .bg{
 	background-color: orange !important;
@@ -305,18 +306,27 @@ a img{
 }
 .work .work_list>ul{
 	margin-right: 0;
+	margin-top: 30px;
 }
-.work .work_list>ul>li:first-of-type>span{
+.work .work_list>span.clicktop{
 	display: inline-block;
 	background: url(../img/index_img/whole.png) no-repeat -203px -240px;
 	width: 20px;
 	height: 9px;
+	left: 100px;
+	line-height: 9px;
+	top: 15px;
+	position: absolute;
 }
-.work .work_list>ul>li:last-of-type>span{
+.work .work_list>span.clickbottom{
 	display: inline-block;
 	background: url(../img/index_img/whole.png) no-repeat -233px -240px;
 	width: 20px;
 	height: 9px;
+	bottom: 30px;
+	position: absolute;
+	left: 100px;
+	
 }
 .work .work_list>ul>li.current{
 	background: url(../img/index_img/whole.png) no-repeat 0 -235px;

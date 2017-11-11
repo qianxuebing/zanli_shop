@@ -67,15 +67,15 @@ $(document).ready(function() {
 		var d = $(this).index();
 		console.log(d);
 		item.removeClass("current").eq(d).addClass("current");
-		new_ul.css("left",-1*new_width*d+"px");
+		new_ul.children().eq(d).fadeIn(1000).siblings().fadeOut();
 	});
 	//new product end
 	
 	//兑换专区  start
 	var n = 0;
 	var count1 = $(".product .productcon dl").length;
-	var width1 = $(".product .productcon dl").width();	
-	var T = setInterval(running,2000);
+	var width1 = $(".product .productcon dl").width() + 42;	
+	var T = setInterval(running,1000);
 	$(".product").hover(function(){
 		clearInterval(T);
 		$('.clickyou').show();
@@ -83,32 +83,35 @@ $(document).ready(function() {
 	},function(){
 		$('.clickyou').hide();
 		$('.clickzuo').hide();
-		T = setInterval(running,2000);
-	});
-	$(".clickyou").click(function(){
-		n = (n+1)%count;
-		$(".productcon").animate({left:-1*width*count+"px"},500,function(){
-				$(".productcon").css("left","0px");
-			});
+		T = setInterval(running,1000);
 	});
 	$(".clickzuo").click(function(){
-		n = (n-1+count)%count;
-		$(".productcon").animate({left:-1*width*count+"px"},500)
+		if (n < 6 && n > 0) {
+			n = (n-1)%6;
+			$(".productcon").animate({left:-width1*n+"px"});
+		}
+	});
+	$(".clickyou").click(function(){
+		if (n < 5) {
+			n = (n+1)%6;
+			$(".productcon").animate({left:-1*width1*n+"px"});
+		}
 	});
 	function running(){
-		n = (n+1)%count;
+		n = (n+1)%6;
 		if (n == 0) {
-			$(".productcon").animate({left:-1*width*count+"px"},500,function(){
-				$(".productcon").css("left","0px");
-			});
+			$(".productcon").animate({left: "0px"});
 		} else{
-			$(".productcon").animate({left:-1*width*n+"px"},500);
+			$(".productcon").animate({left:-1*width1*n+"px"});
 		}
 	}
 	
 	//销量最多
-	$(".mostproduct dl").hover(function(){
+	$(".mostproduct dl").mouseenter(function(){
 		index = $(this).index();
 		$(".mostproduct dl .inner").show().eq(index).hide();
+	});
+	$(".mostproduct dl").mouseleave(function(){
+		$(".mostproduct dl .inner").hide();
 	});
 })
