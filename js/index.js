@@ -1,9 +1,12 @@
 $(document).ready(function() {
 	//subnav
-	$(".sidebar ul li").hover(function() {
+	$(".sidebar ul li").mouseenter(function() {
 		var index = $(this).index();
-		$(".sidebar .subnav .item").removeClass("active").eq(index).addClass("active");
-
+		$(".sidebar .subnav .item").removeClass("active");
+		$(".sidebar .subnav .item").eq(index).addClass("active");
+	});
+	$(".sidebar ul li").mouseleave(function() {
+		$(".sidebar .subnav .item").removeClass("active");
 	});
 
 	//banner carousel(轮播) start
@@ -103,12 +106,9 @@ $(document).ready(function() {
 		}
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-
+	//销量最多
+	$(".mostproduct dl").hover(function(){
+		index = $(this).index();
+		$(".mostproduct dl .inner").show().eq(index).hide();
+	});
 })

@@ -81,8 +81,7 @@ a img{
 	background-color: #fff;
 	position: relative;
 }
-.sidebar .sidebar_con{
-	
+.sidebar .sidebar_con{	
 	border-bottom:1px solid #ddd;
 }
 .sidebar .sidebar_con>li{
@@ -102,7 +101,7 @@ a img{
 	color: #1d7ad9;
 	line-height: 8px;
 	font-size: 16px;
-	padding: 15px 0;
+	padding: 10px 0;
 }
 .sidebar .sidebar_con>li>a>span{
 	display: inline-block;
@@ -120,7 +119,7 @@ a img{
 	font-size: 12px;
 	color: #666;
 	margin-right: 5px;
-	line-height: 25px;
+	line-height: 24px;
 }
 .sidebar .sidebar_con>li:hover .sidebar_list>a{
 	color: #fff;
@@ -131,14 +130,16 @@ a img{
 	left: 198px;
 	width: 600px;
 	z-index: 9999;
-	border: #1D7AD9 solid 1px;
+	
 	background-color: #fff;
+	
 } 
 .subnav .item{
 	width: inherit;
 	display: none;
+	border: #1D7AD9 solid 1px;
 }
-.subnav .item .active{
+.subnav .item.active{
 	display: block;
 }
 .sidebar .subnav>dl>dt{
@@ -243,7 +244,7 @@ a img{
 	margin-right: 10px;
 }
 .product_img>div.items>span.current{
-	background-color: #00ff00;
+	background-color: orangered;
 }
 /*banner end*/
 
@@ -422,6 +423,9 @@ a img{
 }
 .mostproduct>dl>dd>a{
 	font-size: 12px;
+}
+.mostproduct>dl>dd>a:hover{
+	color: #FF7700;
 }
 .mostproduct>dl>dd>span{
 	color: #FF7700;
