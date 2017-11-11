@@ -184,6 +184,7 @@ a img{
 	line-height: 20px;
 	float: left;
 	margin-right: 10px;
+	cursor: pointer;
 }
 .banner_img .items>span.current{
 	background-color: #FF7700;
@@ -242,7 +243,7 @@ a img{
 	margin-right: 10px;
 }
 .product_img>div.items>span.current{
-	background-color: #fff;
+	background-color: #00ff00;
 }
 /*banner end*/
 
@@ -282,8 +283,16 @@ a img{
 	border: 1px solid #ddd;
 	border-top: 2px solid #9bb526;
 	position: relative;
+	height: 300px;
+	overflow: hidden;
 }
-
+.product .productcon{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 2380px;
+	height: 300px;
+}
 .product .productcon>dl{
 	float: left;
 	width: 193px;
@@ -298,6 +307,9 @@ a img{
 }
 .product .productcon>dl>dd>a{
 	font-size: 12px;
+}
+.product .productcon>dl>dd>a:hover{
+	color: #FF7700;
 }
 .product .productcon>dl>dd>i{
 	color: #FF7700;
@@ -317,6 +329,8 @@ a img{
 	background: url(../img/index_img/whole.png) no-repeat 0 -111px;
 	width: 60px;
 	height: 60px;
+	display: none;
+	z-index: 9999;
 }
 .product .clickzuo{
 	position: absolute;
@@ -325,6 +339,8 @@ a img{
 	background: url(../img/index_img/whole.png) no-repeat -65px -111px;
 	width: 60px;
 	height: 60px;
+	display: none;
+	z-index: 9999;
 }
 /*兑换专区   end*/
 
@@ -380,6 +396,16 @@ a img{
 	width: 170px;
 	padding: 13px;
 	border:1px solid #ddd;
+	position: relative;
+}
+.mostproduct>dl .inner{
+	width: 198px;
+	height: 250px;
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
 }
 .mostproduct>dl>dt{
 	text-align: center;
