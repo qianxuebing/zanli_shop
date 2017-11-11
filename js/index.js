@@ -73,9 +73,8 @@ $(document).ready(function() {
 	
 	//兑换专区  start
 	var n = 0;
-	var count1 = $(".product .productcon dl").length;
 	var width1 = $(".product .productcon dl").width() + 42;	
-	var T = setInterval(running,1000);
+	var T = setInterval(running,2000);
 	$(".product").hover(function(){
 		clearInterval(T);
 		$('.clickyou').show();

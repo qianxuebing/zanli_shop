@@ -159,13 +159,15 @@ a img{
 	position: relative;
 	overflow: hidden;
 }
-
-.banner_img>ul>li{
-	width: 755px;
-	height: 353px;
+.banner_img>ul{
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+.banner_img>ul>li{
+	width: 755px;
+	height: 353px;
+	float: left;
 }
 .banner_img>ul>li>img{
 	width: inherit;

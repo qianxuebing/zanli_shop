@@ -372,6 +372,11 @@
 			}, function() {
 				t = setInterval(run, 2000);
 			});
+			items.mouseenter(function(){
+				var index = $(this).index();
+				items.removeClass("current").eq(index).addClass("current");
+				ul.css("left",-1*width*index+"px");
+			});
 
 			function run() {
 				index = (index + 1) % count;
