@@ -316,7 +316,7 @@ a img{
 }
 .work .work_list>ul{
 	margin-right: 0;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 .work .work_list>span.clicktop1,.work .work_list>span.clicktop2,.work .work_list>span.clicktop3{
 	display: inline-block;
@@ -333,7 +333,7 @@ a img{
 	background: url(../img/index_img/whole.png) no-repeat -233px -240px;
 	width: 20px;
 	height: 9px;
-	bottom: 30px;
+	bottom: 20px;
 	position: absolute;
 	left: 100px;
 	
@@ -341,7 +341,7 @@ a img{
 .work .work_list>ul.ulthree>li.current,.work .work_list>ul.ulone>li.current,.work .work_list>ul.ultwo>li.current{
 	background: url(../img/index_img/whole.png) no-repeat 0 -235px;
 	width: 115px;
-	height: 26px;
+	height: 30px;
 }
 .work .work_list>ul.ulthree>li.current>a{
 	color: #1D7AD9;
@@ -354,7 +354,7 @@ a img{
 }
 .work .work_list>ul>li{
 	width: 118px;
-	line-height: 26px;
+	line-height: 30px;
 	text-align: center;
 	margin: 13px 0;
 }
