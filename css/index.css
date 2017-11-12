@@ -128,12 +128,9 @@ a img{
 	position: absolute;
 	top: 0;
 	left: 198px;
-	width: 990px;
-	
-	z-index: 9999;
-	
-	background-color: #fff;
-	
+	width: 990px;	
+	z-index: 9999;	
+	background-color: #fff;	
 } 
 .subnav .item{
 	width: inherit;
@@ -144,13 +141,32 @@ a img{
 .subnav .item.active{
 	display: block;
 }
-.sidebar .subnav>dl>dt{
-	float: left;
-	width: 100px;
+.sidebar .subnav .item>dl{
+	width: 970px;
+	border-bottom: #ddd dashed 1px;
+	padding: 10px ;
 }
-.sidebar .subnav>dl>dd{
+.sidebar .subnav .item>dl>dt{
 	float: left;
 	width: 100px;
+	padding: 5px 0;
+	text-align: center;
+	line-height: 25px;
+	
+}
+.sidebar .subnav .item>dl>dt>a{
+	color: #1D7AD9;
+	font-weight: bold;
+}
+.sidebar .subnav .item>dl>dd{
+	float: left;
+	margin: 0 15px;
+}
+.sidebar .subnav .item>dl>dd>a{
+	font-size: 12px;
+}
+.sidebar .subnav .item>dl>dd>a:hover,.sidebar .subnav .item>dl>dt>a:hover{
+	color: #FF7700;
 }
 .banner .banner_img{
 	width: 755px;
@@ -482,27 +498,25 @@ a img{
 	width: 250px;
 	height: 485px;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
-.personalLeft>ul{
+.personalLeft>ul>li,.personalLeft>ul.ulone>li,.personalLeft>ul.ultwo>li{
+	width: 250px;
+	height: 485px;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-.personalLeft>ul>li{
+.personalLeft>ul>li>a>img,.personalLeft>ul.ulone>li>a>img,.personalLeft>ul.ultwo>li>a>img{
 	width: 250px;
 	height: 485px;
 }
-.personalLeft>ul>li>a>img{
-	width: 250px;
-	height: 485px;
-}
-.personalLeft .items{
+.personalLeft .items,.personalLeft .items1,.personalLeft .items2{
 	position: absolute;
 	bottom: 27px;
 	left: 70px;
 }
-.personalLeft .items>span{
+.personalLeft .items>span,.personalLeft .items1>span,.personalLeft .items2>span{
 	display: inline-block;
 	width: 30px;
 	height: 5px;
@@ -510,7 +524,7 @@ a img{
 	float: left;
 	margin-right: 10px;
 }
-.personalLeft .items>span.current{
+.personalLeft .items>span.current,.personalLeft .items1>span.current,.personalLeft .items2>span.current{
 	background-color: #FF7700;
 }
 .personalCenter{
@@ -528,6 +542,12 @@ a img{
 .personalCenter>dl>dt>a>img{
 	width: 160px;
 	height: 160px;
+}
+.personalCenter>dl>dd>a{
+	font-size: 12px;
+}
+.personalCenter>dl>dd>a:hover{
+	color: #FF7700;
 }
 .personalCenter>dl>dd>span{
 	color: #FF7700;
@@ -563,6 +583,9 @@ a img{
 	line-height: 24px;
 	
 }
+.personalRight>ul>li>a:hover{
+	color: #FF7700;
+}
 .personalRight>ul>li>a>img{
 	width: 130px;
 	height: 130px;
@@ -587,6 +610,9 @@ a img{
 }
 .personalRight>dl>dd>a{
 	font-size: 12px;
+}
+.personalRight>dl>dd>a:hover{
+	color: #FF7700;
 }
 .personalRight>dl>dd>span{
 	display: inline-block;
@@ -744,7 +770,6 @@ a img{
 	padding: 0 5px;
 	
 }
-
 .specialcon_left .leftconL>dl>dd.ico>span>i{
 	display: inline-block;
 	font-size: 12px;
@@ -772,8 +797,15 @@ a img{
 
 	font-size: 12px;
 }
+.specialcon_left .leftconR>dl>dd>a{
+	font-size: 12px;
+}
+.specialcon_left .leftconR>dl>dd>a:hover{
+	color: #FF7700;
+}
 .specialcon_left .leftconR>dl>dd>span{
 	color: #FF7700;
+	font-size: 12px;
 }
 .specialcon_left .leftconR>dl.no{
 	border-right: none !important;

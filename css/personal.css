@@ -213,7 +213,7 @@ a img{
 	margin-top: 20px;
 	background: #ffecf6;
 }
-.three>ul>li.current{
+.three>ul>li:hover{
 	background: #7f7f7f;
 }
 .three>ul>li:nth-last-of-type(2n-1){
@@ -233,10 +233,8 @@ a img{
 	padding: 0 30px;
 	font-size: 12px;	
 }
+
 .three>ul>li:hover>p{
-	color: #FF7700;
-}
-.three>ul>li.current>p{
 	color: #fff;
 }
 .three>ul>li>p>i{
@@ -253,7 +251,11 @@ a img{
 	color: #fff;
 	line-height: 11px;
 	background: rgba(0,0,0,0.5);
-	cursor: pointer;	
+	cursor: pointer;
+	display: none;	
+}
+.three>ul>li:hover>span{
+	display: block;
 }
 .three>ul>li>span>b{
 	display: inline-block;

@@ -1,11 +1,10 @@
 $(document).ready(function() {
 	//subnav
-	$(".sidebar ul li").mouseenter(function() {
+	$(".sidebar ul li").hover(function() {
 		var index = $(this).index();
-		$(".sidebar .subnav .item").removeClass("active");
-		$(".sidebar .subnav .item").eq(index).addClass("active");
+		$(".sidebar .subnav .item").removeClass("active").eq(index).addClass("active");;
 	});
-	$(".sidebar ul li").mouseleave(function() {
+	$(".sidebar").mouseleave(function() {
 		$(".sidebar .subnav .item").removeClass("active");
 	});
 
@@ -65,7 +64,6 @@ $(document).ready(function() {
 	item.eq(0).addClass("current");
 	item.mouseover(function(){
 		var d = $(this).index();
-		console.log(d);
 		item.removeClass("current").eq(d).addClass("current");
 		new_ul.children().eq(d).fadeIn(1000).siblings().fadeOut();
 	});
@@ -112,5 +110,23 @@ $(document).ready(function() {
 	});
 	$(".mostproduct dl").mouseleave(function(){
 		$(".mostproduct dl .inner").hide();
+	});
+	
+	
+	//福利图片
+	$(".personalLeft .items span").mouseenter(function(){
+		var index = $(this).index();
+		$(".personalLeft .items").children().removeClass("current").eq(index).addClass("current");
+		$(".personalLeft ul").children().eq(index).fadeIn(1000).siblings().fadeOut();
+	});
+	$(".personalLeft .items1 span").mouseenter(function(){
+		var index = $(this).index();
+		$(".personalLeft .items1").children().removeClass("current").eq(index).addClass("current");
+		$(".personalLeft ul.ulone").children().eq(index).fadeIn(1000).siblings().fadeOut();
+	});
+	$(".personalLeft .items2 span").mouseenter(function(){
+		var index = $(this).index();
+		$(".personalLeft .items2").children().removeClass("current").eq(index).addClass("current");
+		$(".personalLeft ul.ultwo").children().eq(index).fadeIn(1000).siblings().fadeOut();
 	});
 })
