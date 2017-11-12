@@ -135,6 +135,7 @@ ul li{
 .main{
 	margin-top: 10px;
 	background:url(../img/bg_03.jpg) repeat top left;
+	padding-bottom:35px ;
 }
 .quan>ul{
 	padding: 20px 0px;
@@ -148,8 +149,92 @@ ul li{
 }
 /*优惠券 end*/
 
-.title{
+.title,.title1,.title2{
 	background: url(../img/ico/title1.png) no-repeat center;
 	width: 1190px;
 	height: 101px;
 }
+.title1{
+	background: url(../img/ico/title2.png) no-repeat center;
+}
+.title2{
+	background: url(../img/ico/title3.png) no-repeat center;
+}
+
+.special_list{
+	margin-bottom:18px;
+}
+.special_list>dl{ 
+	margin-top: 16px;
+	margin-right: 10px;	  
+	width: 210px;
+	padding: 10px;
+	background-color: #fff;
+	position: relative;
+	float: left;
+}
+.special_list>dl:nth-of-type(5),.special_list>dl:nth-of-type(10){
+	margin-right: 0;
+}
+.special_list>dl>dt{
+	position: relative;
+	border: #ddd solid 1px;
+}
+.special_list>dl>dt .innerword{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	background: rgba(0,0,0,0.6);
+	width: 190px;
+	padding: 5px 10px;
+	display: none;
+	
+}
+.special_list>dl>dt .innerword.current{
+	display: block;
+}
+.special_list>dl>dt .innerword>p{
+	line-height: 18px;
+	color: #fff;
+}
+.special_list>dl>dt>a>img{
+	width: 210px;
+	height: 210px;
+	font-size: 12px;
+}
+.special_list>dl>dd{
+	line-height: 25px;
+	font-size: 12px;
+	color: #999;
+	width: 190px;
+	border-right: #ff9c00 solid 1px;
+}
+.special_list>dl>dd>i{
+	font-style: normal;
+	color: #666;
+}
+.special_list>dl>dd>b{
+	color: #FF7700;
+}
+.special_list>dl>dd>input{
+	width: 87px;
+	height: 27px;
+	border: #ff7e00 solid 1px;
+	background-color: #FFad00;
+	border-radius: 5px;
+	color: #fff;
+	margin-top:5px ;
+	cursor: pointer;
+}
+.special_list>dl .zhe{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	display: inline-block;
+	background-color: #FFad00;
+	font-size: 12px;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+
