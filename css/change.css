@@ -135,5 +135,87 @@ a img{
 	margin-top: 10px;
 	background:url(../img/ico/salebg.jpg) repeat top left;
 	padding-bottom:35px ;
+	padding-top: 26px;
 	height: 500px;
+}
+
+/*推荐  start*/
+.tuijan .tuoba{
+	width: 497px;
+	height: 286px;
+	background-image: url(../img/change/change1_03.jpg);
+	margin-right: 14px;
+}
+ .tuoba>h4{
+ 	color: #fff;
+ 	font-size: 16px;
+ 	margin: 38px 0 0 52px;
+ 	width: 140px;
+ 	text-align: center;
+ 	line-height: 26px;
+ }
+.tuoba>p{
+ 	margin-left: 52px;
+  	color: #666;
+  	font-size: 12px;
+  	line-height: 25px;
+  }
+ .tuoba>p:first-of-type{
+ 	margin-top: 20px;
+ }
+.tuoba>span{
+	display: block;
+	margin-top: 10px;
+	margin-left: 52px;
+	color: #999;
+	font-size: 12px;
+}
+.tuoba>span>i{
+	font-style: normal;
+	color: #FF7700;
+}
+.tuoba>strong{
+	display: block;
+	margin-top: 15px;
+	margin-left: 52px;
+}
+.tuoba>strong>a{
+	color: #00a8ff;
+}
+.tuoba>strong>a>b{
+	display: inline-block;
+	background: url(../img/ico/whole.png) no-repeat -242px 0px;
+	width: 6px;
+	height: 8px;
+	margin-left: 5px;
+}
+.tuijan .family{
+	width: 380px;
+}
+.tuijan .family .home{
+	width: inherit;
+	height: 130px;
+	background-image: url(../img/change/change2_05.jpg);
+}
+.home>h4{
+	font-size: 24px;
+	text-align: right;
+	padding-top: 20px;
+	padding-right: 30px;
+	color: #fff;
+}
+.home>h4>span{
+	font-size: 24px;
+	color: #FF7700;
+}
+.tuijan .family .clean{
+	width: inherit;
+	height: 130px;
+	background-image: url(../img/change/change2_08.jpg);
+	margin-top: 20px;
+}
+.tuijan .movies{
+	width: 280px;
+	height: 280px;
+	background-image: url(../img/change/change4_03.jpg);
 }
