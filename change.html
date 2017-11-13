@@ -67,7 +67,7 @@
 			</div>
 			<!--nav end-->
 		</div>
-		
+
 		<!--banner  start-->
 		<div class="banner">
 			<div class="w">
@@ -92,14 +92,33 @@
 			</div>
 		</div>
 		<!--banner end-->
-		
+
 		<div class="main">
 			<div class="w">
-				
+				<div class="tuijan clear">
+					<div class="tuoba left">
+						<h4>特别推荐</h4>
+						<p>馨颜&nbsp;旋转拖把双驱动手压洗涤脱水拖</p>
+						<p>布桶&nbsp;蓝色桶+钢蓝+加强杆+钢盘</p>
+						<span>赞礼价： <i>68赞礼币</i></span>
+						<strong><a href="#">立即兑换<b></b></a></strong>
+					</div>
+					<div class="home left">
+						<h4>生活家具<span>兑换</span>月</h4>
+						<dl>
+							<dt>最新推出</dt>
+							<dd>购买1000元即送5个赞礼币</dd>
+							<dd>参与多多，优惠多多</dd>
+						</dl>
+						<p><span><a href#>小设备</a></span><span><a href#>小家电</a></span><span><a href#>厨具</a></span></p>
+					</div>
+					<div class="movies right">
+						<h4>洗化大降价</h4>
+						<p></p>
+					</div>
+				</div>
 			</div>
 		</div>
-		
-		
 
 		<div id="footer"></div>
 
@@ -107,7 +126,7 @@
 		<script type="text/javascript">
 			$("#header").load("header.html");
 			$("#footer").load("footer.html");
-			
+
 			var ul = $(".banner_img ul");
 			var count = $(".banner_img ul li").length;
 			var width = $(".banner_img").width();
@@ -117,7 +136,7 @@
 
 			var first = ul.children().first().clone(true);
 			ul.append(first);
-			
+
 			var items = points.children();
 			items.eq(0).addClass("current");
 
@@ -128,10 +147,10 @@
 			}, function() {
 				t = setInterval(run, 2000);
 			});
-			items.mouseenter(function(){
+			items.mouseenter(function() {
 				var index = $(this).index();
 				items.removeClass("current").eq(index).addClass("current");
-				ul.css("left",-1*width*index+"px");
+				ul.css("left", -1 * width * index + "px");
 			});
 
 			function run() {
@@ -145,7 +164,6 @@
 					ul.animate({ left: -1 * width * index + "px" }, 500);
 				}
 			}
-			
 		</script>
 	</body>
 
