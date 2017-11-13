@@ -208,6 +208,21 @@ a img{
 	font-size: 24px;
 	color: #FF7700;
 }
+.home>dl{
+	border: 1px solid red;
+	padding-right: 30px;
+	width: 180px;
+}
+.home>dl>dt{
+	float: left;
+}
+.home>dl>dd{
+	float: right;
+}
+.home>p{
+	text-align: right;
+	padding-right:30px ;
+}
 .tuijan .family .clean{
 	width: inherit;
 	height: 130px;
