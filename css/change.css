@@ -237,24 +237,61 @@ a img{
 	display: inline-block;
 	width: 50px;
 	height: 16px;
-	border: 1px solid #FF7700;
+	line-height: 16px;
+	border: 1px solid #FF9C00;
 	text-align: center;
-	margin-right: 15px;
-	border
+	margin-right: 5px;
+	border-radius: 15px;
+	background-color: #FF9C00;
+	box-shadow: 2px 2px 5px #1a4f7c;
 	
+}
+.home>p>span:last-child{
+	margin-right: 0;
 }
 .home>p>span>a{
 	font-size: 12px;
-	width: ;	
+	color: #fff;		
 }
 .tuijan .family .clean{
-	width: inherit;
+	width: 360px;
 	height: 130px;
 	background-image: url(../img/change/change2_08.jpg);
 	margin-top: 20px;
+	padding-right: 20px;
+}
+.clean .cleaninner{
+	width: 180px;
+}
+.cleaninner>h4{
+	margin-top: 30px;
+	font-size: 24px;
+	color: #f5856b;
+}
+.cleaninner>p{
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 10px;
 }
 .tuijan .movies{
 	width: 280px;
 	height: 280px;
 	background-image: url(../img/change/change4_03.jpg);
+}
+.movies>h4{
+	font-size: 24px;
+	font-weight: bolder;
+	color: #fff;
+	text-align: center;
+	margin-top: 16px;
+}
+.movies>input{
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 40%;
+	width: 92px;
+	height: 24px;
+	background: none;
+	color: #fff;
 }
