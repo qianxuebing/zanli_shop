@@ -209,19 +209,43 @@ a img{
 	color: #FF7700;
 }
 .home>dl{
-	border: 1px solid red;
-	padding-right: 30px;
-	width: 180px;
+	width: 190px;
+	margin-left: 180px;
+	margin-top: 10px;
+	color: #fff;	
 }
 .home>dl>dt{
 	float: left;
+	width: 30px;
+	background-color: #FF9C00;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
 }
 .home>dl>dd{
 	float: right;
+	width: 150px;
+	font-size: 12px;
+	line-height: 16px;
 }
 .home>p{
 	text-align: right;
 	padding-right:30px ;
+	margin-top: 8px;
+}
+.home>p>span{
+	display: inline-block;
+	width: 50px;
+	height: 16px;
+	border: 1px solid #FF7700;
+	text-align: center;
+	margin-right: 15px;
+	border
+	
+}
+.home>p>span>a{
+	font-size: 12px;
+	width: ;	
 }
 .tuijan .family .clean{
 	width: inherit;
