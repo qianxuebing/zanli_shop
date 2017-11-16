@@ -136,7 +136,6 @@ a img{
 	background:url(../img/ico/salebg.jpg) repeat top left;
 	padding-bottom:35px ;
 	padding-top: 26px;
-	height: 500px;
 }
 
 /*推荐  start*/
@@ -312,4 +311,185 @@ a img{
 	color: #fff;
 	margin-top: 10px;
 	font-size: 16px;	
+}
+
+/*最新兑换  start*/
+.update{
+	background-color: #e1005a;
+	margin-top: 25px;
+	padding: 10px;	
+}
+.update>h4{
+	font-size: 18px;
+	color: #fff;
+	font-weight: normal;
+	text-indent: 1em;
+}
+.update .phone{
+	margin-top: 10px;
+}
+.phone>dl{
+	width: 526px;
+	background-color: #fff;
+	padding: 22px 20px 20px 34px;
+}
+.phone>dl>dt{
+	float: left;
+	margin-right: 20px;
+}
+.phone>dl>dd,.ice>dl>dd{
+	color: #666666;
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 12px;
+}
+.phone>dl>dd:first-of-type,.ice>dl>dd:first-of-type{
+	font-size: 20px;
+	color: #e32468;
+}
+.phone>dl>dd>i,.ice>dl>dd>i{
+	font-style: normal;
+	color: #e32468;
+	font-size: 28px;	
+}
+.phone>dl>dd>span,.ice>dl>dd>span{
+	text-decoration: line-through;
+}
+.phone>dl>dd>a,.ice>dl>dd>a{
+	font-size: 12px;
+}
+.phone>dl>dd>a>b,.phone>dl>dd>b,.ice>dl>dd>a>b,.ice>dl>dd>b{
+	font-weight: normal;
+	color: #e32468;
+	font-size: 12px;
+}
+.phone>dl>dd>input,.ice>dl>dd>input{
+	width: 211px;
+	height: 35px;
+	background-color: #e1005a;
+	border: 1px solid #e1005a;
+	border-radius: 5px;
+	font-size: 16px;
+	color:#fff;
+	cursor: pointer;
+}
+.ice{
+	margin-top: 10px;
+}
+.ice>dl{
+	width: 245px;
+	border: 1px solid blue;
+	margin-right: 7px;
+	background-color: #fff;
+	padding: 18px 20px;
+	height: 410px;
+}
+.ice>dl:last-of-type{
+	margin-right: 0;
+}
+.ice>dl>dt{
+	text-align: center;
+}
+.ice>dl:not(.box)>dd:first-of-type{
+	margin-top: 30px;
+}
+.ice>dl:nth-of-type(3)>dd:first-of-type,.ice>dl:nth-of-type(4)>dd:first-of-type{
+	margin-top: 50px;
+}
+.ice>dl>dd:last-of-type>input{
+	
+}
+
+/*福利 start*/
+.welfare{
+	margin-top: 22px;
+}
+.welfare>div{
+	width: 280px;	
+	margin-right: 23px;	
+}
+.welfare>div:last-of-type{
+	margin-right: 0;
+}
+.personal>h4{
+	width: 280px;
+	height: 128px;
+	background-image: url(../img/ico/saletit3.png);
+	background-size:280px 128px ;
+}
+.company>h4{
+	width: 280px;
+	height: 128px;
+	background-image: url(../img/ico/saletit1.png);
+	background-size:280px 128px ;
+}
+.family>h4{
+	width: 280px;
+	height: 128px;
+	background-image: url(../img/ico/saletit2.png);
+	background-size:280px 128px ;
+}
+.personalpro,.companypro,.familypro{
+	width: 226px;
+	background-color: #fff;
+	border-radius: 0 0 20px 20px;
+	box-shadow:0px 5px 10px #333;
+	margin-left:7px ;
+	padding: 0px 20px 10px 20px;
+}
+.personalpro>dl,.companypro>dl,.familypro>dl{
+	padding: 15px 0;
+	border-bottom: 1px dotted #999;
+}
+.personalpro>dl>dt,.companypro>dl>dt,.familypro>dl>dt{
+	margin-bottom: 10px;
+}
+.personalpro>dl>dt>a>img,.companypro>dl>dt>a>img,.familypro>dl>dt>a>img{
+	width: 226px;
+	height: 226px;
+}
+.personalpro>dl>dd,.companypro>dl>dd,.familypro>dl>dd{
+	line-height: 20px;
+	color: #666;
+	font-size: 12px;
+}
+.personalpro>dl>dd>a,.companypro>dl>dd>a,.familypro>dl>dd>a{
+	font-size: 12px;
+	color: #666;
+}
+.personalpro>dl>dd>a:hover,.companypro>dl>dd>a:hover,.familypro>dl>dd>a:hover{
+	color: #FF7700;
+}
+.personalpro>dl>dd>span,.companypro>dl>dd>span,.familypro>dl>dd>span{
+	float: left;
+	display: inline-block;
+	width: 80px;
+	height: 20px;
+	background-color: #ff7700;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 20px;
+	margin-top: 10px;
+}
+.personalpro>dl>dd>b,.companypro>dl>dd>b,.familypro>dl>dd>b{
+	float: right;
+	margin-top: 10px;
+	font-weight: normal;
+	font-size: 12px;
+	color: #666;	
+}
+.personalpro>dl>dd>b>i,.companypro>dl>dd>b>i,.familypro>dl>dd>b>i{
+	display: inline-block;
+	background: url(../img/index_img/whole.png) no-repeat -218px 0px;
+	width: 17px;
+	height: 15px;
+	margin-right: 5px;
+}
+.change{
+	width: 270px;
+	height: 500px;
+	background-color: red;
+	margin-top: 128px;
 }
