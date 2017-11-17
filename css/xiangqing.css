@@ -78,3 +78,30 @@ a img{
 	top: 10px;		
 }
 /*nav end*/
+
+.title{
+	margin-top: 16px;
+	font-size: 12px;	
+}
+.title>a{
+	font-size:12px;
+	color: #1D7AD9;
+}
+.product{
+	margin-top: 20px;
+}
+.product .productImg{
+	width: 402px;
+	height: 490px;
+	background-color: red;
+}
+.bigimg{
+	width: 400px;
+	height: 400px;
+	border: 1px solid #ddd;
+}
+.product .describe{
+	width: 752px;
+	height: 490px;
+	background-color: deepskyblue;
+}
