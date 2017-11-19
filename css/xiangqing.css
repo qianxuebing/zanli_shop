@@ -169,3 +169,98 @@ a img{
 	height: 490px;
 	background-color: deepskyblue;
 }
+
+.describe>p.title1>a{
+	color: #333;
+	line-height: 24px;	
+}
+.describe>p.detail{
+	color: #ff7700;
+	font-size: 16px;
+	line-height: 24px;
+}
+.describe>p.market{
+	color: #999;
+	font-size: 12px;
+	text-indent: 2em;
+	margin-top: 20px;
+}
+.describe>p.market>span{
+	font-size: 12px;
+	color: #999;
+	text-decoration: line-through;
+}
+.describe>p.zanli{
+	margin-top: 20px;
+	font-size: 12px;
+	color: #666;
+	text-indent: 2em;
+	line-height: 34px;
+}
+.describe>p.zanli>input{
+	width: 114px;
+	height: 34px;
+	border: 1px solid #ddd;
+	color: #FF7700;
+	font-size: 18px;
+}
+.describe>p.zanli>b{
+	color: #FF7700;
+	font-size: 18px;
+	font-weight: normal;
+}
+.describe>p.prompt{
+	margin-top: 20px;
+	font-size: 12px;
+	color: #1D7AD9;
+}
+.describe>p.prompt>strong{
+	display: inline-block;
+	width: 61px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #ff7700;
+	color: #fff;
+	font-weight: normal;
+}
+.describe>dl.color{
+	margin-top: 20px;
+}
+.describe>dl.color>dt,.describe>dl.edition>dt,.describe>dl.memory>dt{
+	color: #666;
+	font-size: 12px;
+	margin-right: 12px;
+}
+.describe>dl.color>dd>a{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	border: 1px solid #ddd;
+}
+.describe>dl.color>dd>a.current,.describe>dl.edition>dd>a.current,.describe>dl.memory>dd>a.current{
+	border-color: #FF7700;
+}
+.describe>dl.color>dd>a>img{
+	width: 50px;
+	
+}
+.describe>dl.edition{
+	margin-top: 14px;	
+}
+.describe>dl.edition>dd{
+	width: 495px;
+}
+.describe>dl.edition>dd>a,.describe>dl.memory>dd>a{
+	display: inline-block;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	border: 1px solid #dedede;
+	margin-right:6px;
+	margin-bottom: 10px;
+	
+}
