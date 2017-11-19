@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-		<link rel="stylesheet" type="text/css" href="css/whole.css"/>
-		<link rel="stylesheet" type="text/css" href="css/xiangqing.css"/>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/whole.css" />
+		<link rel="stylesheet" type="text/css" href="css/xiangqing.css" />
 	</head>
+
 	<body>
 		<div id="header"></div>
-		
+
 		<div class="w">
 			<!--top start-->
 			<div class="top clear">
@@ -64,48 +66,90 @@
 				</ul>
 			</div>
 			<!--nav end-->
-			
-			<p class="title"><a href="index.html">首页</a> - <a href="companyWelfare.html">公司福利</a> - <a href="#">办公福利</a> - 收纳用品</p>
-			
+
+			<p class="title">
+				<a href="index.html">首页</a> -
+				<a href="companyWelfare.html">公司福利</a> -
+				<a href="#">办公福利</a> - 收纳用品</p>
+
 			<div class="product clear">
-				<div class="productImg left">
-					<div class="bigimg">
-						<a href="#"><img src="img/index_img/product/jqzoomlist.jpg"/></a>
+				<div class="product1 left">
+					<div class="productImg">
+						<div class="bigimg">
+							<img src="img/index_img/product/jqzoomlist.jpg" />
+						</div>
+						<div class="item"></div>
+						<div class="fangda"></div>
 					</div>
-					<div class="smallimg">
-						<div class="clickleft"></div>
-						
-						<ul class="clear">
-							<li><a href="#"><img src="img/xiangqing/xiangqing_03.jpg"/></a></li>
-							<li><a href="#"><img src="img/xiangqing/xiangqing_05.jpg"/></a></li>
-							<li><a href="#"><img src="img/xiangqing/xiangqing_07.jpg"/></a></li>
-							<li><a href="#"><img src="img/xiangqing/xiangqing_09.jpg"/></a></li>
+					<div class="smallimg clear">
+						<div class="clickleft left">
+							< </div>
+						<ul class="clear left">
+							<li class="current">
+								<img src="img/index_img/product/jqzoomlist.jpg" />
+							</li>
+							<li>
+								<img src="img/xiangqing/xiangqing_05.jpg" />
+							</li>
+							<li>
+								<img src="img/xiangqing/xiangqing_07.jpg" />
+							</li>
+							<li>
+								<img src="img/xiangqing/xiangqing_09.jpg" />
+							</li>
 						</ul>
-						<div class="clickright"></div>
-					</div>					
+						<div class="clickright right"> > </div>
+					</div>
 				</div>
-				<div class="describe right">
-					
+					<div class="describe right">
+
+					</div>
 				</div>
+
 			</div>
-			
-			
-		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<div id="footer"></div>
-		
-		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
-		<script type="text/javascript">
-			$("#header").load("header.html");
-			$("#footer").load("footer.html");
-		</script>
+
+			<div id="footer"></div>
+
+			<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+			<script type="text/javascript">
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
+				
+
+				$(".productImg .fangda").css("background-image", "url(img/index_img/product/9.jpg)");
+				$(".productImg .fangda").css("background-size", "1600px 1600px");
+
+				$(".productImg").mousemove(function(e) {
+					var x = e.pageX - this.offsetLeft - 50;
+					var y = e.pageY - this.offsetTop - 50;
+
+					x = x < 0 ? 0 : x;
+					x = x > 300 ? 300 : x;
+
+					y = y < 0 ? 0 : y;
+					y = y > 300 ? 300 : y
+
+					$(".productImg .item").css("left", x + "px");
+					$(".productImg .item").css("top", y + "px");
+
+					$(".productImg .fangda").css("background-position", x * -4 + "px " + y * -4 + "px");
+				});
+
+				$(".productImg").hover(function() {
+					$(".productImg .item").css("display", "block");
+					$(".productImg .fangda").css("display", "block");
+				}, function() {
+					$(".productImg .item").css("display", "none");
+					$(".productImg .fangda").css("display", "none");
+				});
+				$(".smallimg ul li").mouseenter(function(){
+					var index = $(this).index();
+					var src = $(this).children()[0].src;
+					$(".productImg .bigimg").children()[0].src = src;
+					$(".productImg .fangda").css("background-image","url("+src+")");
+					$(".smallimg ul li").removeClass("current").eq(index).addClass("current");										
+				});
+			</script>
 	</body>
+
 </html>

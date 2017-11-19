@@ -38,25 +38,63 @@ a img{
 .header a:hover{
 	color: red;
 }
+.headerLeft{
+	position: relative;
+}
+.headerLeft:hover .list{
+	display: block;
+}
+.headerLeft .list{
+	position: absolute;
+	top: 16px;
+	left: 0;
+	background-color: #fff;
+	padding: 10px 20px;
+	width: 200px;
+	z-index: 9999;
+	display: none;
+}
+.list>p{
+	line-height: 16px;
+	margin-top: 10px;
+}
+.list>p>a{
+	color: #666;
+	font-size: 12px;
+}
 .headerLeft>p{
 	margin-right: 10px;
 	line-height: 14px;
+	color: #666;	
 }
-.headerLeft>a{
+.headerLeft .list>p.word{
+	font-size: 12px;
+	color: #666;
+	margin-left: 28px;
+}
+.headerLeft>p>img{
+	width: 110px;
+	height: 116px;
+}
+.headerLeft>a,.headerLeft .list>p>span{
 	display: inline-block;
 	width: 18px;
 	height: 16px;
 	margin-right: 5px;
 }
-.headerLeft>a.weibo{	
+.headerLeft>a.weibo,.headerLeft .list>p>span.weibo1{	
 	background: url(../img/index_img/whole.png) no-repeat 0 0;
 }
-.headerLeft>a.tengxun{
+.headerLeft>a.tengxun,.headerLeft .list>p>span.tengxun1{
 	background: url(../img/index_img/whole.png) no-repeat -21px 0;
 }
 .headerLeft>a.weixin{
 	background: url(../img/index_img/whole.png) no-repeat -40px 0;
 	margin-right: 2px;
+}
+.headerLeft .list>p>span.weixin1{
+	background: url(../img/index_img/whole.png) no-repeat -40px 0;
+	margin-right: 10px;
 }
 .headerLeft>span{
 	display: inline-block;
@@ -151,6 +189,7 @@ a img{
 	height: 42px;
 	line-height: 42px;
 	margin-top: 10px;
+	position: relative;
 }
 .top .shoppingCart>span{
 	display: inline-block;	
@@ -159,8 +198,7 @@ a img{
 	text-align: center;
 	height: 42px;
 	line-height: 42px;
-	cursor: pointer;
-	
+	cursor: pointer;	
 }
 .top .shoppingCart>span.cart_word{
 	width: 117px;
