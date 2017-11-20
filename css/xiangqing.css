@@ -167,7 +167,7 @@ a img{
 .product .describe{
 	width: 752px;
 	height: 490px;
-	background-color: deepskyblue;
+	/*background-color: deepskyblue;*/
 }
 
 .describe>p.title1>a{
@@ -203,6 +203,7 @@ a img{
 	border: 1px solid #ddd;
 	color: #FF7700;
 	font-size: 18px;
+	background-color: #fff;
 }
 .describe>p.zanli>b{
 	color: #FF7700;
@@ -228,7 +229,7 @@ a img{
 .describe>dl.color{
 	margin-top: 20px;
 }
-.describe>dl.color>dt,.describe>dl.edition>dt,.describe>dl.memory>dt{
+.describe>dl.color>dt,.describe>dl.edition>dt,.describe>dl.memory>dt,.describe>dl.num>dt{
 	color: #666;
 	font-size: 12px;
 	margin-right: 12px;
@@ -244,8 +245,7 @@ a img{
 	border-color: #FF7700;
 }
 .describe>dl.color>dd>a>img{
-	width: 50px;
-	
+	width: 50px;	
 }
 .describe>dl.edition{
 	margin-top: 14px;	
@@ -261,6 +261,41 @@ a img{
 	color: #666;
 	border: 1px solid #dedede;
 	margin-right:6px;
-	margin-bottom: 10px;
-	
+	margin-bottom: 10px;	
+}
+.describe>dl.num>dd{
+	font-size: 12px;
+	color: #666;
+	/*border: 1px solid red;*/
+	line-height: 21px;
+}
+.describe>dl.num>dd>span{
+	display: inline-block;
+	width: 17px;
+	height: 21px;
+	float: left;
+	margin-right: 5px;
+}
+.describe>dl.num>dd>span.jian{
+	background: url(../img/ico/whole.png) no-repeat -147px -271px;
+}
+.describe>dl.num>dd>span.jia{
+	background: url(../img/ico/whole.png) no-repeat -174px -271px;	
+}
+.describe>dl.num>dd>span.num1{
+	display: inline-block;
+	border: 1px solid #dedede;
+	width: 34px;
+	height: 18px;
+	color: #570087;
+	font-size: 12px;
+	margin-top: 0;
+	text-align: center;
+	line-height: 18px;
+}
+.describe>dl.num>dd>i{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: #1D7AD9;
 }

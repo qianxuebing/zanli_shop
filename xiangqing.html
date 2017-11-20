@@ -136,7 +136,7 @@
 						 </dl>
 						 <dl class="num clear">
 						 	<dt class="left">购买数量：</dt>
-						 	<dd class="left"><span class="jian"></span><input type="button" value="1" /><span class="jia"></span> 库存<i>29</i>件 累计销量<i>5896</i> 累计评价<i>3659</i></dd>
+						 	<dd class="left clear"><span class="jian"></span><span class="num1">1</span><span class="jia"></span> 库存<i>29</i>件 累计销量<i>5896</i> 累计评价<i>3659</i></dd>
 						 </dl>
 						 <div class="more clear">
 						 	<div class="cart left">
@@ -212,6 +212,21 @@
 					e.preventDefault();
 					var index = $(this).index();
 					$( ".describe dl.memory dd a").removeClass("current").eq(index).addClass("current");
+				});
+				
+				//购买数量
+				$(".num dd span.jian").click(function(){
+					var num1 =  $(this).next("span");
+					var num1val = num1.text();
+					if (num1val>0) 
+						num1val--;
+					num1.text(num1val);
+				});
+				$(".num dd span.jia").click(function(){
+					var num1 =  $(this).prev("span");
+					var num1val = num1.text();
+					num1val++;
+					num1.text(num1val);					
 				});
 			</script>
 	</body>
