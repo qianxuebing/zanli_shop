@@ -166,7 +166,6 @@ a img{
 }
 .product .describe{
 	width: 752px;
-	height: 550px;
 }
 
 .describe>p.title1>a{
@@ -225,6 +224,7 @@ a img{
 	background-color: #ff7700;
 	color: #fff;
 	font-weight: normal;
+	padding-left:5px ;
 }
 .describe>dl.color{
 	margin-top: 20px;
@@ -261,7 +261,7 @@ a img{
 	color: #666;
 	border: 1px solid #dedede;
 	margin-right:6px;
-	margin-bottom: 10px;	
+	margin-bottom: 5px;	
 }
 .describe>dl.num>dd{
 	font-size: 12px;
@@ -335,4 +335,112 @@ a img{
 	background: url(../img/ico/addCart.png) no-repeat -27px -115px;
 	margin-top: 13px;
 	margin-right: 5px;	
+}
+.collocation{
+	margin-top: 30px;
+	border: 1px solid #dedede;
+	padding: 20px 24px 24px 16px;
+}
+.collocation>dl.title3>dt{
+	color: #666;
+	font-size: 16px;
+}
+.collocation>dl.title3>dd>a{
+	color: #666;
+	font-size: 12px;
+	display: inline-block;
+	margin-left: 43px;
+}
+.collocation>dl.title3>dd>a.current{
+	color: #FF7700;
+}
+.collocationPro{
+	margin-top: 26px;
+	position: relative;
+	height: 75px;
+}
+.prolist{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.prolist>dl{
+	width: 266px;
+}
+.prolist>dl.one{
+	width: auto;
+}
+.prolist>dl.one>dt{
+	border: 1px solid #ddd;
+	margin-right: 33px;
+	margin-left: 0; 
+}
+
+.prolist>dl>dt{
+	border: 1px solid #ddd;	
+	margin-left: 20px;
+	margin-right: 10px;
+}
+.prolist>dl>dt>a>img{
+	width: 75px;
+}
+.prolist>dl.one>dd{
+	height: 75px;
+	line-height: 75px;
+	width: auto;
+}
+.prolist>dl>dd{
+	float: left;
+	width: 144px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #999;
+}
+.prolist>dl.one>dd>img{
+	width: 51px;
+	height: 49px;
+	vertical-align: middle;
+}
+.prolist>dl>dd>span{
+	color: #c10001;
+	font-weight: bold;
+	font-size: 12px;
+}
+.prolist>dl>dd>b{
+	color: #666;
+	font-weight: normal;
+	font-size: 12px;
+}
+.prolist>dl.last{
+	/*border: 1px solid red;*/
+	width: 180px;
+}
+.prolist>dl.last>dt{
+	border: none;
+	height: 75px;
+	line-height: 75px;
+	margin-left: 0;
+	margin-right: 25px;
+}
+.prolist>dl.last>dt>img{
+	width: 50px;
+	height: 28px;
+	vertical-align: middle;	
+}
+.prolist>dl.last>dd{
+	width: 100px;
+	float: left; 
+	color: #666; 
+}
+.prolist>dl.last>dd>span{
+	color: #FF7700;
+}
+.prolist>dl.last>dd>input{
+	width: 100px;
+	height: 25px;
+	color: #fff;
+	background-color: #1D7AD9;
+	text-align: center;
+	line-height: 25px;
+	border: none;
 }
