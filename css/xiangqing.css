@@ -496,3 +496,46 @@ a img{
 .title4>a:last-of-type{
 	border-right: none;
 }
+.allbig{
+	height: 319px;
+	margin-top: 10px;
+	position: relative;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #ddd;
+}
+.big_img{
+	width: 950px;
+	height: 319px;
+	background-color: lightgreen;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.big_img>img{
+	width: 950px;
+	height: 319px;
+}
+
+.parameter{
+	margin-top: 12px;
+}
+.parameter>h4{
+	color: #666;
+	font-size: 16px;
+}
+.parameter>h4>img{
+	width: 102px;
+	height: 15px;
+	margin-left: 10px;
+}
+.parameter>table{
+	margin: 36px 0 0 74px;
+	border-color: #ddd;	
+	color:#666;
+	font-size: 12px;
+}
+.parameter>table>tr>td{
+	width: 284px;
+	height: 32px;
+	
+}

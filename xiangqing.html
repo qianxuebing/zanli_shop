@@ -356,15 +356,60 @@
 							<a href="#">规格参数</a>
 							<a href="#">商品评价</a>
 						</div>
-						
-						<div class="allbig">
+
+						<div class="allbig">							
 							<div class="big_img">
-								
+								123
+							</div>
+							<div class="big_img">
+								456
+							</div>
+							<div class="big_img">
+								<img src="img/xiangqing/imgbig1_04.jpg" />
+							</div>							
+						</div>
+
+						<!--产品参数 start-->
+						<div class="parameter">
+							<h4>产品参数 <img src="img/xiangqing/imgbig_09.jpg"/></h4>
+							<table border="1" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>产品名称：FISHER-PRICE/费雪 某58...</td>
+									<td>型号：M8581</td>
+									<td>材质：毛绒玩偶</td>
+								</tr>
+								<tr>
+									<td>品牌：FISHER-PRICE/费雪 </td>
+									<td>颜色分类：粉色 蓝色海马</td>
+									<td>种类：多功能抓握玩偶</td>
+								</tr>
+								<tr>
+									<td>系列：M851</td>
+									<td>适用年龄：3周岁以下</td>
+									<td>是否有导购视频：有</td>
+								</tr>
+							</table>
+						</div>
+
+						<!--图文详情 start-->
+						<div class="image-text">
+							<h4>图文详情 <span></span></h4>
+							<div class="imgbig">
+								<img src="img/index_img/product/productimage_01.jpg" />
+								<img src="img/index_img/product/productimage_02.jpg" />
+								<img src="img/index_img/product/productimage_03.jpg" />
+								<img src="img/index_img/product/productimage_04.jpg" />
+								<img src="img/index_img/product/productimage_05.jpg" />
+								<img src="img/index_img/product/productimage_06.jpg" />
+								<img src="img/index_img/product/productimage_07.jpg" />
+								<img src="img/index_img/product/productimage_08.jpg" />
+								<img src="img/index_img/product/productimage_09.jpg" />
+								<img src="img/index_img/product/productimage_10.jpg" />
+								<img src="img/index_img/product/productimage_11.jpg" />
+								<img src="img/index_img/product/productimage_12.jpg" />
 							</div>
 						</div>
-						
-						
-						
+
 					</div>
 				</div>
 			</div>
@@ -453,6 +498,14 @@
 					var index = $(this).index();
 					$(".title3 dd a").removeClass("current").eq(index).addClass("current");
 					$(".collocationPro .prolist").fadeOut().eq(index).fadeIn();
+				});
+				
+				//商品介绍
+				$(".title4 a").click(function(e){
+					e.preventDefault();
+					var index = $(this).index();
+					$(".title4 a").removeClass("current").eq(index).addClass("current");
+					$(".allbig .big_img").hide().eq(index).show();
 				});
 			</script>
 	</body>
