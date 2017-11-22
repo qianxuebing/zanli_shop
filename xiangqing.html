@@ -359,12 +359,6 @@
 
 						<div class="allbig">							
 							<div class="big_img">
-								123
-							</div>
-							<div class="big_img">
-								456
-							</div>
-							<div class="big_img">
 								<img src="img/xiangqing/imgbig1_04.jpg" />
 							</div>							
 						</div>
@@ -372,7 +366,7 @@
 						<!--产品参数 start-->
 						<div class="parameter">
 							<h4>产品参数 <img src="img/xiangqing/imgbig_09.jpg"/></h4>
-							<table border="1" cellspacing="0" cellpadding="0">
+							<table border="0" cellspacing="0" cellpadding="0">
 								<tr>
 									<td>产品名称：FISHER-PRICE/费雪 某58...</td>
 									<td>型号：M8581</td>
@@ -393,7 +387,7 @@
 
 						<!--图文详情 start-->
 						<div class="image-text">
-							<h4>图文详情 <span></span></h4>
+							<h4>图文详情 <img src="img/xiangqing/imgbig_09.jpg"/></h4>
 							<div class="imgbig">
 								<img src="img/index_img/product/productimage_01.jpg" />
 								<img src="img/index_img/product/productimage_02.jpg" />
@@ -409,6 +403,100 @@
 								<img src="img/index_img/product/productimage_12.jpg" />
 							</div>
 						</div>
+						
+						<!--规格参数  start-->
+						<div class="title4">
+							<a href="#">商品介绍</a>
+							<a href="#" class="current">规格参数</a>
+							<a href="#">商品评价</a>
+						</div>
+						
+						<table border="0" cellspacing="0" cellpadding="0" class="tab">
+							<tbody>
+								<tr>
+									<td>产品品牌</td>
+									<td>康佳(KONKA)</td>
+								</tr>
+								<tr>
+									<td>上市日期</td>
+									<td>2014</td>
+								</tr>
+								<tr>      
+									<td>产品型号</td>
+									<td>LED42E330CE</td>
+								</tr>
+								<tr>
+									<td>产品类型</td>
+									<td>普通电视</td>
+								</tr>
+								<tr>
+									<td>产品颜色</td>
+									<td>黑色</td>
+								</tr>
+								<tr>
+									<td>能效等级</td>
+									<td>三级能效</td>
+								</tr>
+								<tr>
+									<td>最佳观看距离（米）</td>
+									<td>2.5-3.5米</td>
+								</tr>
+								<tr>
+									<td>屏幕尺寸</td>
+									<td>42英寸</td>
+								</tr>
+								<tr>
+									<td>屏幕类别</td>
+									<td>A+级屏</td>
+								</tr>
+								<tr>
+									<td>屏幕分辨率</td>
+									<td>全高清（1920x1080）</td>
+								</tr><tr>
+									<td>亮度</td>
+									<td>400-600流明</td>
+								</tr>
+								
+								<tr>
+									<td>屏幕比例</td>
+									<td>16:9</td>
+								</tr><tr>
+									<td>刷屏率</td>
+									<td>50HZ</td>
+								</tr>
+								<tr>
+									<td>背光源</td>
+									<td>直下式LED</td>
+								</tr>
+								<tr>
+									<td>扫描方式</td>
+									<td>逐行扫描</td>
+								</tr>
+								<tr>
+									<td>响应时间</td>
+									<td>9MS</td>
+								</tr>
+								<tr>
+									<td>USB支持视频格式</td>
+									<td>支持3GP,AVI,MPG,RM,MOV,MKV,MPEG</td>
+								</tr>
+								<tr>
+									<td>USB支持音频格式</td>
+									<td>支持MP3，WMA,AAC</td>
+								</tr>
+								<tr>
+									<td>USB支持图片格式</td>
+									<td>支持JPG,JPEG,PNG,BMP</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--商品评价 start-->
+						<div class="title4">
+							<a href="#">商品介绍</a>
+							<a href="#">规格参数</a>
+							<a href="#" class="current">商品评价</a>
+						</div>
+						
 
 					</div>
 				</div>
@@ -500,13 +588,7 @@
 					$(".collocationPro .prolist").fadeOut().eq(index).fadeIn();
 				});
 				
-				//商品介绍
-				$(".title4 a").click(function(e){
-					e.preventDefault();
-					var index = $(this).index();
-					$(".title4 a").removeClass("current").eq(index).addClass("current");
-					$(".allbig .big_img").hide().eq(index).show();
-				});
+				
 			</script>
 	</body>
 
