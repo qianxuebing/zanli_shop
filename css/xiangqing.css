@@ -444,3 +444,55 @@ a img{
 	line-height: 25px;
 	border: none;
 }
+.all{
+	margin-top: 15px;
+}
+.congeneric{
+	width: 186px;
+	border: 1px solid #ddd;
+	padding: 18px 16px 14px 16px;
+}
+.congeneric>h4{
+	font-size: 16px;
+	color: #666;
+	font-weight: normal;
+}
+.congeneric>dl{
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px dashed #ddd;
+}
+.congeneric>dl>dt>a>img{
+	width: 186px;
+}
+.congeneric>dl>dd{
+	color: #666;
+	line-height: 22px;
+	font-size: 12px;
+}
+.congeneric>dl>dd>span{
+	color: #FF7700;
+}
+.detailall{
+	width: 950px;
+	/*background-color: yellow;*/
+}
+.title4{
+	width: 948px;
+	border: 1px solid #ddd;
+	height: 48px;
+	line-height: 48px;
+}
+.title4>a{
+	display: inline-block;
+	padding: 0 43px;
+	border-right: 1px solid #ddd;
+	color: #666;
+}
+.title4>a.current{
+	color: #1D7AD9;
+	font-weight: bold;
+}
+.title4>a:last-of-type{
+	border-right: none;
+}
