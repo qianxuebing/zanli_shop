@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>支付成功</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/whole.css" />
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			
+			ul li {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #333;
+			}
+			
+			a img {
+				border: 0;
+			}
+			
+			.left {
+				float: left;
+			}
+			
+			.right {
+				float: right;
+			}
+			
+			.clear:after {
+				display: block;
+				content: "";
+				clear: both;
+			}
+			
+			.w {
+				width: 1190px;
+				margin: 0 auto;
+			}
+			/*nav start*/
+			
+			.nav {
+				margin-top: 10px;
+				height: 44px;
+				background-color: #ff7700;
+			}
+			
+			.nav>ul {
+				position: relative;
+			}
+			
+			.nav>ul>li {
+				float: left;
+			}
+			
+			.nav>ul>li:hover {
+				background-color: #f15500;
+			}
+			
+			.nav>ul>li>a {
+				display: inline-block;
+				font-size: 16px;
+				color: #fff;
+				line-height: 44px;
+				padding: 0 35px;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			.nav>ul>li:first-of-type {
+				background-color: #1d7ad9;
+				width: 200px;
+			}
+			
+			.nav>ul>li:nth-of-type(5) {
+				background-color: #f15500;
+			}
+			
+			.nav>ul>li:last-of-type {
+				background: url(../img/index_img/whole.png) no-repeat -154px 0;
+				width: 25px;
+				height: 14px;
+				padding: 0;
+				position: absolute;
+				right: 225px;
+				top: 10px;
+			}
+			/*nav end*/
+			/*支付进程  start*/
+			
+			.course {
+				margin-top: 30px;
+				text-align: right;
+			}
+			
+			.success {
+				height: 80px;
+				margin-left:;
+				margin: 112px 0 142px 452px;
+			}
+			.success .imgl{
+				width: 80px;
+				height: 80px;
+				margin-right: 20px;
+			}
+			.success .imgl>img{
+				width: 80px;
+				height: 80px;
+			}
+			.success .goon>p:first-child{
+				color: #FF7700;
+				font-size: 18px;
+				line-height: 28px;
+				margin-top: 10px;
+			}
+			.success .goon>p:last-child{
+				color: #666;
+				font-size: 12px;
+				line-height: 28px;
+			}
+			.success .goon>p:last-child>a:first-of-type{
+				color: #1D7AD9;
+				text-decoration: underline;
+			}
+			.success .goon>p:last-child>a:last-of-type{
+				color: #FF7700;
+				text-decoration: underline;
+			}
+			/*猜你喜欢 start*/			
+			.guess {
+				margin-top: 30px;
+			}
+			
+			.guess>h4 {
+				font-size: 16px;
+				line-height: 16px;
+				font-weight: normal;
+				color: #666;
+			}
+			
+			.guess>h4>img {
+				margin-right: 5px;
+			}
+			
+			.guesspro {
+				margin-top: 10px;
+				padding: 20px;
+				border: solid 1px #ddd;
+			}
+			
+			.guesspro>dl {
+				width: 170px;
+				float: left;
+				margin-right: 22px;
+			}
+			
+			.guesspro>dl:last-child {
+				margin-right: 0;
+			}
+			
+			.guesspro>dl>dt>a>img {
+				width: 170px;
+			}
+			
+			.guesspro>dl>dd {
+				color: #666;
+				line-height: 22px;
+				font-size: 12px;
+			}
+			
+			.guesspro>dl>dd:first-of-type:hover {
+				color: #FF7700;
+			}
+			
+			.guesspro>dl>dd:first-of-type {
+				margin-top: 5px;
+			}
+			
+			.guesspro>dl>dd:last-of-type {
+				color: #FF7700;
+			}
+			
+			.guess1 {
+				margin-bottom: 25px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="header"></div>
+
+		<div class="w">
+			<!--top start-->
+			<div class="top clear">
+				<div class="logo left">
+					<img src="img/index_img/logo.jpg" width="200" height="80" />
+				</div>
+				<div class="search left">
+					<form action="#" method="post" class="search_form clear">
+						<input type="text" value="请输入搜素关键字......" class="left" />
+						<input type="button" value="搜 素" class="left" />
+					</form>
+					<div class="list">
+						<a href="#" class="current">生日礼物</a>
+						<a href="#">巧克力</a>
+						<a href="#">鲜花</a>
+						<a href="#">手表</a>
+						<a href="#" class="current">项链/吊坠</a>
+						<a href="#">家居装饰</a>
+						<a href="#">炭雕摆件</a>
+					</div>
+				</div>
+				<div class="online">
+					<a href="#"><img src="img/company_img/qq.jpg" /></a>
+				</div>
+			</div>
+			<!--top end-->
+			<!--nav start-->
+			<div class="nav">
+				<ul class="clear">
+					<li>
+						<a href="#">全部商品分类</a>
+					</li>
+					<li>
+						<a href="index.html" target="_blank">首页</a>
+					</li>
+					<li>
+						<a href="personalWefare.html" target="_blank">个人福利</a>
+					</li>
+					<li>
+						<a href="familyWelfare.html" target="_blank">家庭福利</a>
+					</li>
+					<li>
+						<a href="companyWelfare.html" target="_blank">公司福利</a>
+					</li>
+					<li>
+						<a href="#">兑换专区</a>
+					</li>
+					<li>
+						<a href="specialPrice.html" target="_blank">特价专卖</a>
+					</li>
+					<li></li>
+				</ul>
+			</div>
+			<!--nav end-->
+
+			<!--支付进程 start-->
+			<div class="course">
+				<img src="img/ico/car4.jpg" />
+			</div>
+
+			<div class="success clear">
+				<div class="imgl left">
+					<img src="img/pay_03.jpg"/>
+				</div>
+				<div class="goon left">
+					<p>购买成功！</p>
+					<p>可在<a href="#">我的订单</a>里查阅交易状态&nbsp;
+						<a href="#">继续购买</a>
+					</p>
+				</div>
+
+			</div>
+
+			<!--猜你喜欢  start-->
+			<div class="guess">
+				<h4><img src="img/xiangqing/ico0_03.jpg"/>猜你喜欢</h4>
+				<div class="guesspro clear">
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/11.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/12.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/13.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/14.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/15.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/6.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+				</div>
+			</div>
+
+			<!--最近浏览  start-->
+			<div class="guess guess1">
+				<h4><img src="img/xiangqing/ico1_03.jpg"/>最近浏览</h4>
+				<div class="guesspro clear">
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/1.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/10.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/16.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/17.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/18.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/19.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer"></div>
+
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript">
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		</script>
+
+	</body>
+
+</html>
