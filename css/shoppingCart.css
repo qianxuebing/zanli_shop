@@ -101,12 +101,215 @@ a img{
 	margin: 0 ;
 	font-weight: normal;
 }
-.goods>a:hover{
+.goods>a.current{
 	background-color: #333;
 	color: #fff;
 	border-radius: 5px;
 }
 .selected{
 	margin-top: 18px;
+	border: 1px solid #ddd;
+	
+}
+
+.other{
+	padding-left: 20px;
+}
+.goods_title{
+	height: 53px;
+	line-height: 53px;
+	border-bottom: 1px dashed #ddd;
+}
+.goods_title>input{
+	margin-top: 20px;
+	font-size: 12px;
+	color: #666;
+}
+.goods_title>span{
+	float: left;
+	font-size: 12px;
+	color: #666;
+	display: inline-block;
+}
+.goods_title>span:nth-of-type(2){
+	margin: 0  278px 0 20px;
+}
+.goods_title>span:nth-of-type(3){
+	margin-right: 175px;
+}
+.goods_title>span:nth-of-type(4){
+	margin-right: 184px;
+}
+.goods_title>span:nth-of-type(5){
+	margin-right: 132px;
+}
+.goods_title>span:nth-of-type(6){
+	margin-right: 104px;
+}
+.goods_select{
+	margin-top: 20px;
+	padding-bottom: 14px;
+	border-bottom: 1px dashed #ddd;
+}
+.goods_select>dl{
+	margin-left: 50px;
+	margin-right: 42px;
+}
+.goods_select>dl>dt{
+	margin-right: 10px;
+	border: 1px solid #ddd;
+}
+.goods_select>dl>dt>a>img{
+	width: 68px;
+	height: 68px;	
+}
+.goods_select>dl>dd{
+	width: 180px;
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;	
+}
+.message{
+	width: 190px;
+	margin-right: 42px;
+}
+.message>p{
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;
+}
+.price{
+	font-size: 12px;
+	color: #666;
+	margin-right: 52px;	
+}
+.price>input{
+	width: 72px;
+	height: 17px;
+}
+.num{
+	width: 96px;
+	margin-right: 57px;
+}
+.num>button{
+	width: 15px;
+	height: 17px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	color: #666;
+}
+.num>input{
+	width:53px;
+	text-align: center;
+	height: 17px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+.count{
+	margin-right: 70px;
+}
+.count>p{
+	line-height: 20px;
+	color: #FF7700;
+}
+.operation>a{
+	display: block;
+	line-height: 20px;
+	color: #666;
+}
+.total{
+	height: 60px;
+	line-height: 60px;
+	background-color: #f2f2f2;
+}
+.totalleft{
+	padding-left: 20px;
+}
+.totalleft>a{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.totalleft>a.collect>span{
+	display: inline-block;
+	width: 17px;
+	height: 13px;
+	background: url(../img/ico/whole.png) no-repeat -120px -270px;
+	margin-right: 5px;
+}
+.totalleft>a.del>span{
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	background: url(../img/ico/whole.png) no-repeat -100px -270px;
+	margin-right: 5px;	
+}
+.totalright
+.totalright>p{
+	color: #666;
+	font-size: 12px;
+}
+.totalright>p>i{
+	font-style: normal;
+	color: #FF7700;
+}
+.totalright>p>b,.totalright>p>strong{
+	color: #FF7700;
+	font-size: 20px;
+	font-weight: normal;
+}
+.totalright>span{
+	display: inline-block;
+	width: 144px;
+	font-size: 24px;
+	color: #fff;
+	background-color: #FF7700;
+	text-align: center;
+	margin-left: 12px;	
+}
+/*猜你喜欢 start*/
+.guess{
+	margin-top: 30px;
+}
+.guess>h4{
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: normal;
+	color: #666;
+}
+.guess>h4>img{
+	margin-right: 5px;
+}
+.guesspro{
+	margin-top: 10px;
+	padding: 20px;
 	border: solid 1px #ddd;
+}
+.guesspro>dl{
+	width: 170px;
+	float: left;
+	margin-right: 22px;
+}
+.guesspro>dl:last-child{
+	margin-right: 0;
+}
+.guesspro>dl>dt>a>img{
+	width: 170px;
+}
+.guesspro>dl>dd{
+	color: #666;
+	line-height: 22px;
+	font-size: 12px;
+}
+.guesspro>dl>dd:first-of-type:hover{
+	color: #FF7700;
+}
+.guesspro>dl>dd:first-of-type{
+	margin-top: 5px;
+}
+.guesspro>dl>dd:last-of-type{
+	color: #FF7700;
+}
+.guess1{
+	margin-bottom: 25px;
 }

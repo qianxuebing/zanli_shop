@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>购物车</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-		<link rel="stylesheet" type="text/css" href="css/whole.css"/>
-		<link rel="stylesheet" type="text/css" href="css/shoppingCart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/whole.css" />
+		<link rel="stylesheet" type="text/css" href="css/shoppingCart.css" />
 	</head>
+
 	<body>
-		
+
 		<div id="header"></div>
-		
+
 		<div class="w">
 			<!--top start-->
 			<div class="top clear">
@@ -65,63 +67,200 @@
 				</ul>
 			</div>
 			<!--nav end-->
-			
+
 			<!--支付进程 start-->
 			<div class="course">
-				<img src="img/ico/car1.jpg"/>
+				<img src="img/ico/car1.jpg" />
 			</div>
-			
-			<h4 class="goods"><a href="#">全部商品（3）</a> | <a href="#">降价商品（2）</a> | <a href="#">库存紧张（2）</a></h4>
-			
+
+			<h4 class="goods"><a href="#" class="current">全部商品（3）</a> | <a href="#">降价商品（2）</a> | <a href="#">库存紧张（2）</a></h4>
+
 			<div class="selected">
-				<div class="goods_title">
-					<input type="checkbox" value="" />全选<span>商品</span><span>商品信息</span><span>单价</span><span>数量</span><span>合计</span><span>操作</span>
+				<div class="">
+
+					<div class="other">
+						<div class="goods_title clear">
+							<span><input type="checkbox" value=""/> 全选</span><span>商品</span><span>商品信息</span><span>单价</span><span>数量</span><span>合计</span><span>操作</span>
+						</div>
+						<div class="goods_select clear">
+							<input type="checkbox" value="" class="left" />
+							<dl class="left clear">
+								<dt class="left"><a href="#"><img src="img/index_img/product/productimage_03.jpg"/></a></dt>
+								<dd class="left">韩国代购早秋新款安哥拉兔毛针织衫白色包臀连衣裙套装</dd>
+							</dl>
+							<div class="message left">
+								<p>颜色分类：白色【衣+裙】</p>
+								<p>尺码：M【适合100-110斤穿】</p>
+							</div>
+							<div class="price left">
+								<input type="text" id="" value="" /> 赞礼币+89.9元
+							</div>
+							<div class="num left">
+								<button class="jian">-</button>
+								<input type="text" id="" value="1" />
+								<button class="jia">+</button>
+							</div>
+							<div class="count left">
+								<p>23赞礼币</p>
+								<p>129.9元</p>
+							</div>
+							<div class="operation left">
+								<a href="#">加入收藏</a>
+								<a href="#">删除</a>
+							</div>
+						</div>
+						<div class="goods_select clear">
+							<input type="checkbox" value="" class="left" />
+							<dl class="left clear">
+								<dt class="left"><a href="#"><img src="img/index_img/product/productimage_03.jpg"/></a></dt>
+								<dd class="left">韩国代购早秋新款安哥拉兔毛针织衫白色包臀连衣裙套装</dd>
+							</dl>
+							<div class="message left">
+								<p>颜色分类：白色【衣+裙】</p>
+								<p>尺码：M【适合100-110斤穿】</p>
+							</div>
+							<div class="price left">
+								<input type="text" id="" value="" /> 赞礼币+89.9元
+							</div>
+							<div class="num left">
+								<button class="jian">-</button>
+								<input type="text" id="" value="1" />
+								<button class="jia">+</button>
+							</div>
+							<div class="count left">
+								<p>23赞礼币</p>
+								<p>129.9元</p>
+							</div>
+							<div class="operation left">
+								<a href="#">加入收藏</a>
+								<a href="#">删除</a>
+							</div>
+						</div>
+					</div>
+				
+				<div class="total clear">
+					<div class="totalleft left">
+						<input type="checkbox" id="" value="" /> 全选
+						<a href="#" class="collect"><span></span>加入收藏</a>
+						<a href="#" class="del"><span></span>删除</a>
+					</div>
+					<div class="totalright right clear">
+						<p class="left">共有<i>4</i>件商品，共计 <b>29</b> 个赞礼币+ <strong>259.90</strong> 元</p>
+						<span class="payment">
+							去付款
+						</span>
+					</div>
 				</div>
-				<div class="goods_select">
-					<input type="checkbox" value="" />
-					<dl>
-						<dt><a href="familyWelfare.html"></a></dt>
-						<dd>韩国代购早秋新款安哥拉兔毛针织衫白色包臀连衣裙套装</dd>
-					</dl>
-					<div class="message">
-						<p>颜色分类：白色【衣+裙】</p>
-						<p>尺码：M【适合100-110斤穿】</p>
-					</div>
-					<div class="price">
-						<input type="text" id="" value="" />赞礼币+89.9元
-					</div>
-					<div class="num">
-						<button>-</button>
-						<input type="text" id="" value="1" />
-						<button>+</button>
-					</div>
-					<div class="count">
-						<p>23赞礼币</p>
-						<p>129.9元</p>
-					</div>
-					<div class="operation">
-						<a href="#">加入收藏</a>
-						<a href="#">删除</a>
-					</div>
-				</div>
-				<div class="total">
-					
 				</div>
 			</div>
-			
+
+			<!--猜你喜欢  start-->
+			<div class="guess">
+				<h4><img src="img/xiangqing/ico0_03.jpg"/>猜你喜欢</h4>
+				<div class="guesspro clear">
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/11.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/12.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/13.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/14.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/15.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/6.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+				</div>
+			</div>
+
+			<!--最近浏览  start-->
+			<div class="guess guess1">
+				<h4><img src="img/xiangqing/ico1_03.jpg"/>最近浏览</h4>
+				<div class="guesspro clear">
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/1.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/10.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/16.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/17.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/18.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+					<dl>
+						<dt><a href="#"><img src="img/index_img/product/19.jpg"/></a></dt>
+						<dd>GATER 欧式骨瓷咖啡杯瓷杯碟</dd>
+						<dd>￥159.00</dd>
+					</dl>
+				</div>
+			</div>
+
 		</div>
-		
+
 		<div id="footer"></div>
-		
-		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
 		<script type="text/javascript">
 			$("#header").load("header.html");
 			$("#footer").load("footer.html");
-			
-			
-			
+
+			//全部商品
+			$(".goods a").click(function(e) {
+				e.preventDefault();
+				var index = $(this).index();
+				$(".goods a").removeClass("current").eq(index).addClass("current");
+			});
+
+			//数量
+			$(".num .jian").click(function() {
+				var input1 = $(this).next();
+				var inputVal = input1.val();
+				if(inputVal > 1) {
+					inputVal--;
+					input1.val(inputVal);
+				}
+			});
+			$(".num .jia").click(function() {
+				var input1 = $(this).prev();
+				var inputVal = input1.val();
+				inputVal++;
+				input1.val(inputVal);
+			});
 		</script>
-		
-		
+
 	</body>
+
 </html>

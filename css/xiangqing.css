@@ -648,6 +648,9 @@ a img{
 	line-height: 22px;
 	font-size: 12px;
 }
+.guesspro>dl>dd:first-of-type:hover{
+	color: #FF7700;
+}
 .guesspro>dl>dd:first-of-type{
 	margin-top: 5px;
 }
