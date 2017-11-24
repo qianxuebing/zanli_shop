@@ -84,3 +84,179 @@ a img{
 	margin-top: 30px;
 	text-align: right;
 }
+.message{
+	margin-top: 34px;
+	width: 1050px;
+	height: 45px;
+	line-height: 45px;
+	margin-left: 52px;
+	border: 1px solid #FF9C00;
+	background-color: #fff5e9;
+	padding: 0 15px;
+	font-size: 12px;
+	color: #666;
+}
+h4.people{
+	font-size: 16px;
+	color: #666;
+	font-weight: normal;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-top: 30px;
+}
+h4.people>span{
+	display: inline-block;
+	width: 6px;
+	height: 9px;
+	background: url(../img/ico/pay-icon.png) no-repeat -91px -33px;
+	margin-right: 12px;
+}
+.address{
+	line-height: 45px;
+}
+.address>span{
+	color: #FF7700;
+	font-size: 12px;
+}
+.address>input{
+	margin: 20px 5px 0 0;
+	
+}
+.revise>a{
+	font-size: 12px;
+	color: #1D7AD9;
+}
+.address1{
+	margin-top: 16px;
+	margin-left: 120px;
+	color: #666;
+	font-size: 12px;
+}
+.newaddress{
+	margin-top: 23px;
+	margin-left: 120px;	
+}
+.newaddress>button{
+	width: 98px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border: 1px solid #ddd;
+	background-image: linear-gradient(to bottom, #fff,#f5f5f5);
+	font-size: 12px;
+	color: #666;
+	border-radius: 5px;
+}
+.detail_address{
+	margin-top: 15px;
+	border: 1px solid #ddd;
+	width: 756px;
+	padding: 24px 0 15px 34px;
+	background-color: #f8f8f8;
+	font-size: 12px;
+	color: #666;
+}
+.detail_address>table>tbody>tr{
+	height: 35px;
+}
+.detail_address>table>tbody>tr>td:first-of-type{
+	text-align: right;		
+}
+
+.detail_address>table>tbody>tr>td>input.jiali{
+	width: 70px;
+	height: 22px;
+	padding-left:5px ;
+	font-size: 12px;
+	color: #666;
+}
+.detail_address>table>tbody>tr>td>select{
+	width: 123px;
+	height: 22px;
+	font-size: 12px;
+}
+.detail_address>table>tbody>tr>td>input#detailall{
+	width: 335px;
+	height: 22px;
+}
+.detail_address>table>tbody>tr>td>input#qu{
+	width: 40px;
+	height: 22px;
+	font-size: 12px;
+	color: #666;
+	padding-left:5px ;
+}
+.detail_address>table>tbody>tr>td>input#hao{
+	width: 95px;
+	height: 22px;
+	font-size: 12px;
+	color: #666;
+	padding-left:5px ;
+	
+}
+.detail_address>table>tbody>tr>td.del{
+	text-align: left;
+	padding-left: 70px;
+}
+.detail_address>table>tbody>tr>td>input#btn{
+	width: 98px;
+	height: 25px;
+	margin-right: 20px;
+	background-image: linear-gradient(to bottom,#fff,#f4f4f4);
+	border: 1px solid #ddd;
+}
+
+/*支付方式 start*/
+.method{
+	margin-top: 32px;
+	margin-left: 55px;
+}
+.method>p{
+	line-height: 34px;
+	color: #666;
+	font-size: 12px;
+}
+.banks{
+	margin-top: 14px;
+	margin-left: 80px;
+	background-color: #f2f0f1;
+	width: 941px;
+	padding: 16px 0;
+}
+.banks>div{
+	float: left;
+	height: 48px;
+	line-height: 48px;
+	margin: 0 20px 16px 20px;	
+}
+.banks>div:nth-of-type(5),.banks>div:nth-of-type(6),.banks>div:nth-of-type(7){
+	margin-bottom: 0;
+}
+.banks>div>img{
+	width: 163px;
+	height: 48px;
+	border: 1px solid #ddd;
+	vertical-align: middle;
+	margin-left: 12px;
+}
+
+/*发票信心 start*/
+.invoice{
+	margin-top: 33px;
+	margin-left: 60px;
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 10px;
+}
+.tou,.content{
+	line-height: 30px;
+	margin-left: 82px;
+	font-size: 12px;
+	color: #666;
+}
+.content{
+	margin-bottom: 45px;
+}
+.tou>input,.content>input{
+	margin-left: 20px;
+}

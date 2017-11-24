@@ -6,7 +6,7 @@
 		<title>确认订单</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/whole.css" />
-		<link rel="stylesheet" type="text/css" href="css/firm_order.css"/>
+		<link rel="stylesheet" type="text/css" href="css/firm_order.css" />
 	</head>
 
 	<body>
@@ -71,17 +71,144 @@
 			<div class="course">
 				<img src="img/ico/car2.jpg" />
 			</div>
-			
+
 			<!--收货人信息  start-->
-			
-			<div class="message">
-				<h4><span></span>收货人信息</h4>
-				<div class="">
-					
+			<h4 class="people"><span></span>收货人信息</h4>
+			<div class="message clear">				
+				<div class="address left">
+					<span>寄送至：</span>
+					<input type="radio" name="ra" id="" value="" />上海 上海市 宝山区 呼兰路799号越界智汇园9号楼乐活家000室（张文青 收） 18221097584
+				</div>
+				<div class="revise right">
+					<a href="#">修改本地址</a>
+				</div>
+			</div>
+			<div class="address1">
+				<input type="radio" name="ra" value="" />上海 上海市 闸北区1250号如家酒店2号楼0000室（张文青 收） 18221097584
+			</div>
+			<div class="newaddress">
+				<button>使用新地址</button>
+				<div class="detail_address">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tbody>
+							
+							<tr>
+								<td>地址标注：</td>
+								<td><input type="text"  value="家里" class="jiali"/> 例如家里，公司，最多四个汉字或者八个字母。</td>
+							</tr>
+							<tr>
+								<td>选择地区：</td>
+								<td>
+									<select>
+										<option>==请选择==</option>
+										<option>上海</option>
+										<option>北京</option>
+										<option>安徽</option>
+										<option>江苏</option>
+									</select>
+									<select>
+										<option>==请选择==</option>
+										<option>上海市</option>
+										<option>北京</option>
+										<option>安徽</option>
+										<option>江苏</option>
+									</select>
+									<select>
+										<option>==请选择==</option>
+										<option>静安区</option>
+										<option>徐汇区</option>
+										<option>虹口区</option>
+										<option>闵行区</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>详细地址：</td>
+								<td><input type="text" name="" id="detailall" value="" /></td>
+							</tr>
+							<tr>
+								<td>邮政编码：</td>
+								<td><input type="email" name="" id="" value="" /></td>
+							</tr>
+							<tr>
+								<td>收获人：</td>
+								<td><input type="text" name="" id="get" value="" /></td>
+							</tr>
+							<tr>
+								<td>手机：</td>
+								<td><input type="tel" name="" id="" value="" /></td>
+							</tr>
+							<tr>
+								<td>固定电话：</td>
+								<td><input type="text" name="" id="qu" value="区号" />-<input type="text" id="hao" value="电话号码"/></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="del">
+									<input type="button" id="btn" value="保存地址" /><a href="#">取消</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 			
-			
+			<!--支付方式 start-->
+			<h4 class="people"><span></span>支付方式</h4>
+				<div class="method">
+					<p><input type="radio" name="pay" id="pay" value="" /> 货到付款</p>
+					<p><input type="radio" name="pay" id="pay" value="" /> 支付宝</p>
+					<p><input type="radio" name="pay" id="pay" value="" /> 财付通</p>
+					<p><input type="radio" name="pay" id="pay" value="" /> 网上银行</p>
+				</div>
+				<div class="banks clear">
+					<div class="choose">
+						<input type="radio" name="choose" id="choose" />
+						<img src="img/xiangqing/banks_03.jpg"/>
+					</div>
+					<div class="choose">
+						<input type="radio" name="choose" id="choose" />
+						<img src="img/xiangqing/banks_05.jpg"/>
+					</div>
+					<div class="choose">
+						<input type="radio" name="choose" id="choose" />
+						<img src="img/xiangqing/banks_07.jpg"/>
+					</div>
+					<div class="choose">
+						<input type="radio" name="choose" id="choose" />
+						<img src="img/xiangqing/banks_09.jpg"/>
+					</div>
+					<div class="choose">
+						<input type="radio" name="choose" id="choose" />
+						<img src="img/xiangqing/banks_15.jpg"/>
+					</div>
+					<div class="choose">
+						<input type="radio" name="choose" id="choose" />
+						<img src="img/xiangqing/banks_16.jpg"/>
+					</div>
+					<div class="choose">
+						<input type="radio" name="choose" id="choose" />
+						<img src="img/xiangqing/banks_17.jpg"/>
+					</div>
+				</div>
+				
+				<!--发票信息  start-->
+				<h4 class="people"><span></span>发票信息</h4>
+				<p class="invoice">发票开据方式：普通发票（纸质）</p>
+				<p class="tou">发票抬头：
+					<input type="radio" name="tou" id="tou" value="" /> 个人
+					<input type="radio" name="tou" id="tou" value="" /> 单位 
+					<input type="text" name="" id="" value="" />
+				</p>
+				<p class="content">发票内容：
+					<input type="radio" name="content" id="content" value="" /> 明细
+					<input type="radio" name="content" id="content" value="" /> 办公用品
+					<input type="radio" name="content" id="content" value="" /> 电脑配件
+					<input type="radio" name="content" id="content" value="" /> 耗材
+				</p>
+				
+				<!--商品清单  start-->
+				<h4 class="people"><span></span>商品清单</h4>
+
 		</div>
 
 		<div id="footer"></div>
