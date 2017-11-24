@@ -260,3 +260,136 @@ h4.people>span{
 .tou>input,.content>input{
 	margin-left: 20px;
 }
+
+/*商品清单  start*/
+.meau{
+	margin-top: 28px;
+	margin-left: 48px;
+}
+.meautitle{
+	width: 1090px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #edf7ff;
+}
+.meautitle>a{
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+}
+.meautitle>a:first-of-type{
+	margin-left: 107px;
+}
+.meautitle>a:nth-of-type(2){
+	margin-left: 319px;
+}
+.meautitle>a:nth-of-type(3){
+	margin-left: 150px;
+}
+.meautitle>a:nth-of-type(4){
+	margin-left: 150px;
+}
+.meautitle>a:nth-of-type(5){
+	margin-left: 150px;
+}
+.mesupro{
+	margin-top: 20px;
+	padding:0 0 18px 15px;
+	border-bottom: 1px dashed #ddd;
+	width: 1075px;
+}
+.mesupro>dl{
+	width: 430px;
+}
+.mesupro>dl>dt>a>img{
+	width: 70px;
+	height: 70px;
+	border: 1px solid #ddd;
+	margin-right: 12px;
+}
+
+.mesupro>dl>dd{
+	float: left;
+	width: 215px;
+	color: #1D7AD9;
+	line-height: 20px;
+	font-size: 12px;
+}
+.mesupro>dl>dd:last-of-type{
+	margin-top: 5px;
+}
+.mesupro>dl>dd>a{
+	color: #666;
+	font-size: 12px;
+}
+.zanli{
+	width: 186px;
+}
+.zanli>p{
+	color: #1D7AD9;
+	line-height: 20px;
+	font-size: 12px;
+	color: #666;
+}
+.discount{
+	width: 200px;
+	font-size: 12px;
+	color: #666;
+}
+.num{
+	width: 165px;	
+}
+.total>p{
+	line-height: 20px;
+	font-size: 12px;
+	color: #666;
+	color: #FF7700;
+}
+.detailcount{
+	margin: 23px 0 50px 0;
+	width: 1090px;
+}
+.detailcount>table{
+	margin-left: 820px;
+}
+.detailcount>table>tbody>tr{
+	height: 24px;
+	color: #666;
+	font-size: 12px;
+}
+.detailcount>table>tbody>tr>td:first-of-type{
+	text-align: right;
+}
+.detailcount>table>tbody>tr>td>span{
+	color: #FF7700;
+}
+.pay{
+	height: 58px;
+	line-height: 58px;
+	background-color: #F2F2F2;
+	margin-bottom: 20px;
+}
+.paydetail{
+	margin-left: 800px;
+	font-size: 12px;
+	color: #666;
+	
+}
+.paydetail>p{
+	margin-right: 26px;
+}
+.paydetail>p>span{
+	font-size: 20px;
+	color: #FF7700;
+}
+.paydetail>span{
+	width: 135px;
+	line-height: 58px;
+	background-color: #FF7700;
+	text-align: center;	
+}
+.paydetail>span>a{
+	color: #fff;
+
+	font-size: 20px;
+}

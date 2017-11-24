@@ -244,7 +244,6 @@ a img{
 	background: url(../img/ico/whole.png) no-repeat -100px -270px;
 	margin-right: 5px;	
 }
-.totalright
 .totalright>p{
 	color: #666;
 	font-size: 12px;
@@ -260,12 +259,14 @@ a img{
 }
 .totalright>span{
 	display: inline-block;
-	width: 144px;
-	font-size: 24px;
-	color: #fff;
+	width: 144px;	
 	background-color: #FF7700;
 	text-align: center;
 	margin-left: 12px;	
+}
+.totalright>span>a{
+	font-size: 24px;
+	color: #fff;
 }
 /*猜你喜欢 start*/
 .guess{
