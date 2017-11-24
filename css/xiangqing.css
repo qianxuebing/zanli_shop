@@ -216,7 +216,6 @@ a img{
 }
 .describe>p.prompt>strong{
 	display: inline-block;
-	width: 61px;
 	height: 20px;
 	line-height: 20px;
 	font-size: 12px;
