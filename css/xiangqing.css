@@ -303,15 +303,17 @@ a img{
 }
 .more .cart{
 	height: 40px;
-	line-height: 40px;
-	color: #fff;
+	line-height: 40px;	
 	text-align: center;
 	background-color: #FF7700;
 	margin-left: 68px;
 	margin-right: 13px;
 	padding: 0 33px;
 }
-.more .cart>span{
+.more .cart>a{
+	color: #fff;
+}
+.more .cart>a>span{
 	display: inline-block;
 	width: 22px;
 	height: 20px;
