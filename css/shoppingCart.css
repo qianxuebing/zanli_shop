@@ -265,6 +265,8 @@ a img{
 	margin-left: 12px;	
 }
 .totalright>span>a{
+	display: block;
+	width: 144px;
 	font-size: 24px;
 	color: #fff;
 }

@@ -80,7 +80,7 @@
 
 					<div class="other">
 						<div class="goods_title clear">
-							<span><input type="checkbox" value=""/> 全选</span><span>商品</span><span>商品信息</span><span>单价</span><span>数量</span><span>合计</span><span>操作</span>
+							<span><input type="checkbox" value="" class="all" /> 全选</span><span>商品</span><span>商品信息</span><span>单价</span><span>数量</span><span>合计</span><span>操作</span>
 						</div>
 						<div class="goods_select clear">
 							<input type="checkbox" value="" class="left" />
@@ -102,7 +102,7 @@
 							</div>
 							<div class="count left">
 								<p>23赞礼币</p>
-								<p>129.9元</p>
+								<p class="price1">129.9元</p>
 							</div>
 							<div class="operation left">
 								<a href="#">加入收藏</a>
@@ -123,13 +123,13 @@
 								<input type="text" id="" value="" /> 赞礼币+89.9元
 							</div>
 							<div class="num left">
-								<button class="jian">-</button>
+								<button class="jian1">-</button>
 								<input type="text" id="" value="1" />
-								<button class="jia">+</button>
+								<button class="jia1">+</button>
 							</div>
 							<div class="count left">
 								<p>23赞礼币</p>
-								<p>129.9元</p>
+								<p class="price2">129.9元</p>
 							</div>
 							<div class="operation left">
 								<a href="#">加入收藏</a>
@@ -145,7 +145,7 @@
 						<a href="#" class="del"><span></span>删除</a>
 					</div>
 					<div class="totalright right clear">
-						<p class="left">共有<i>4</i>件商品，共计 <b>29</b> 个赞礼币+ <strong>259.90</strong> 元</p>
+						<p class="left">共有<i>0</i>件商品，共计 <b>46</b> 个赞礼币+ <strong>0.00</strong> 元</p>
 						<span class="payment">
 							<a href="firm_order.html">去付款</a>
 						</span>
@@ -243,6 +243,15 @@
 				var index = $(this).index();
 				$(".goods a").removeClass("current").eq(index).addClass("current");
 			});
+			
+			//全选
+			var all = $(".goods_title input.all");
+			all.click(function(){
+				if (all.is(":checked")) {
+					$(".goods_select input[type='checkbox']").attr("checked","checked");
+				}
+			});
+			
 
 			//数量
 			$(".num .jian").click(function() {
@@ -251,6 +260,15 @@
 				if(inputVal > 1) {
 					inputVal--;
 					input1.val(inputVal);
+					if (inputVal==1) {
+						$(".count .price1").text("129");
+						
+					}else{
+						var n =(inputVal)*129;
+						$(".count .price1").text(n);
+					}
+					
+						
 				}
 			});
 			$(".num .jia").click(function() {
@@ -258,7 +276,37 @@
 				var inputVal = input1.val();
 				inputVal++;
 				input1.val(inputVal);
+				var n = inputVal*129;
+				$(".count .price1").text(n);
+				
 			});
+			
+			$(".num .jian1").click(function() {
+				var input1 = $(this).next();
+				var inputVal = input1.val();
+				if(inputVal > 1) {
+					inputVal--;
+					input1.val(inputVal);
+					if (inputVal==1) {
+						$(".count .price1").text("129");
+						
+					}else{
+						var n =(inputVal)*129;
+						$(".count .price1").text(n);
+					}
+						
+				}
+			});
+			$(".num .jia1").click(function() {
+				var input1 = $(this).prev();
+				var inputVal = input1.val();
+				inputVal++;
+				input1.val(inputVal);
+				var n = inputVal*129;
+				$(".count .price2").text(n);
+				
+			});
+			
 		</script>
 
 	</body>
